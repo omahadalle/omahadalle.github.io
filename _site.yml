@@ -1,0 +1,38 @@
+name: "Omar A. Mahadalle"                                # CHANGE HERE 
+output_dir: "."
+navbar:
+  title: "Omar A. Mahadalle"                             # CHANGE HERE 
+  type: inverse
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "About"
+      icon: fa-user 
+      href: about.html
+    - text: "CV"
+      icon: fa-file-pdf-o
+      href: cv.html
+    - text: "Blog"
+      icon: fa-rss
+      href: https://YOURGITHUB.github.io/blog/  # CHANGE HERE OR DELETE ALL 3 LINES 
+    - text: "Sci. Commun"
+      icon: fa-user 
+      href: research.html
+  right:
+    - text: "Contact me"
+      icon: fa-envelope-o
+      href: mailto:mahadallemb@gmail.com                    # CHANGE HERE 
+    - text: "GitHub"
+      icon: fa-github
+      href: https://github.com/omahadalle       # CHANGE HERE 
+    - text: "Twitter"
+      icon: fa-twitter fa-lg
+      href: https://twitter.com/Omar_MarineBio
+    - text: "LinkedIn"
+      icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/omarmahadalle
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
