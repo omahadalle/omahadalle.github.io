@@ -1,7 +1,4 @@
 # Site settings
-title: BY Blog
-SEOTitle: 柏荧的博客 | BY Blog
-
 name: "Omar A. Mahadalle"                                
 output_dir: "."
 navbar:
