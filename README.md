@@ -1,2 +1,2 @@
 # omahadalle.github.io
-waa website-keyga personalka ah oo add igala socon kartaan. 
+waa website-keyga personalka ah 
