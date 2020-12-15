@@ -1,7 +1,7 @@
-name: "Omar A. Mahadalle"                                # CHANGE HERE 
+name: "Omar A. Mahadalle"                                
 output_dir: "."
 navbar:
-  title: "Omar A. Mahadalle"                             # CHANGE HERE 
+  title: "Omar A. Mahadalle"                            
   type: inverse
   left:
     - text: "Home"
@@ -15,17 +15,17 @@ navbar:
       href: cv.html
     - text: "Blog"
       icon: fa-rss
-      href: https://YOURGITHUB.github.io/blog/  # CHANGE HERE OR DELETE ALL 3 LINES 
+      href: https://YOURGITHUB.github.io/blog/  
     - text: "Sci. Commun"
       icon: fa-user 
       href: research.html
   right:
     - text: "Contact me"
       icon: fa-envelope-o
-      href: mailto:mahadallemb@gmail.com                    # CHANGE HERE 
+      href: mailto:mahadallemb@gmail.com                   
     - text: "GitHub"
       icon: fa-github
-      href: https://github.com/omahadalle       # CHANGE HERE 
+      href: https://github.com/omahadalle       #
     - text: "Twitter"
       icon: fa-twitter fa-lg
       href: https://twitter.com/Omar_MarineBio
