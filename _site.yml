@@ -36,3 +36,25 @@ output:
   html_document:
     theme: cosmo
     highlight: textmate
+    
+    {
+    "name": "cosmo",
+    "displayName": "cosmo",
+    "description": "cosmo",
+    "version": "0.0.1",
+    "publisher": "cosmo",
+    "engines": {
+        "vscode": "^1.11.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "cosmo",
+                "uiTheme": "vs-dark",
+                "path": "./themes/cosmo.tmTheme"
+            }
+        ]
+    }
