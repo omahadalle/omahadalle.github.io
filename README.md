@@ -1,2 +1,2 @@
 # omahadalle.github.io
-waa website-keyga shakhsiga ah
+waa website-keyga personalka ah
