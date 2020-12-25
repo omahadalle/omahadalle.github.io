@@ -1,6 +1,1 @@
-layout	title
-page
-About me
-
-
 Hi! I'm Omar, am MSc-student
