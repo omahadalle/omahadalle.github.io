@@ -10,7 +10,7 @@ navbar:
       href: index.html
     - text: "About me"
       icon: fa-user 
-      href: About.html
+      href: about.md
     - text: "CV"
       icon: fa-file-pdf-o
       href: cv.html
