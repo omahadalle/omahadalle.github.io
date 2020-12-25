@@ -8,7 +8,7 @@ navbar:
     - text: "Home"
       icon: fa-home
       href: index.html
-    - text: "About Me"
+    - text: "About me"
       icon: fa-user 
       href: about.html
     - text: "CV"
