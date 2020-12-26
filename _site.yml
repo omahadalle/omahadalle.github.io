@@ -16,10 +16,18 @@ navbar:
       href: cv.html
     - text: "Blog"
       icon: fa-rss
-      href: https://YOURGITHUB.github.io/blog/  
+      menu:
+        - text: "Ocean Decade Somalia"
+          href: writepage.html 
+        - text: "Fisheries in Somalia"
+          href: images.html  
     - text: "Sci. Commun"
-      icon: fa-user 
-      href: research.html
+      icon: fa-user
+       menu:
+        - text: "Ocean Decade Somalia"
+          href: writepage.html 
+        - text: "Fisheries in Somalia"
+          href: images.html
   right:
     - text: "Contact me"
       icon: fa-envelope-o
