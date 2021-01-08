@@ -1,1 +1,1 @@
-Hi! I'm Omar, am MSc-student
+Hi! My name is Omar Mahadalle and I am a MSc-student
