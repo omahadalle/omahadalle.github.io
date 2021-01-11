@@ -389,7 +389,16 @@ $(document).ready(function () {
   <p><small> © 2020 Omar Mahadalle, hosted on <a href="https://pages.github.com">GitHub Pages</a>.<small></p>
 </div>  
 
-<script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+      function addDarkmodeWidget() {
+        new Darkmode().showWidget();
+      }
+      window.addEventListner('load', addDarkmodeWidget);
+      </script>
+    
+    fb:Coding
+      
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
