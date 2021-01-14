@@ -1,3 +1,3 @@
 
 Short Bio
-Hi! My name is Omar Mahadalle and I am a MSc-student in Marine Biology. 
+Hi! My name is Omar Mahadalle and I am a MSc-student in Marine Biology. I am working on my thesis research.
