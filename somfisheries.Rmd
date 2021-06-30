@@ -1,17 +1,17 @@
-Synopsis of Somali Fisheries
-Fisheries in Somalia
+## Synopsis of Somali Fisheries
+## Fisheries in Somalia
 
-Introduction
+## Introduction
 Somalia is located in a highly productive upwelling area. Somali fishers use traditional fishing methods to catch coastal large pelagic fishes. Domestic fishey sector is poorly managed due to lack of effective fisheries policy. Indeed, the fisheries regulations are so outdated. increase demand for fishery products. one of the richest fishing grounds in the region Bigeye and Albacore tuna. The sector plays in terms of nutrition, income, employment and earning foreign exchange it plays a much bigger role in the economies of many coastal area. Although some portion of the handgear fishery is recreational, all giant tuna is sold, and therefore is also commercial.
 
-Foreign Fishing
+## Foreign Fishing
 The Ministry of Fisheries and Marine Resources (MFMR) issued 41 fishing licences to Foreign vessels to engage in fishing activities in the Somali EEZ without having a well defined plan to to monitoring , control and surveillance.
 Currently Chinese are fishing in Somali EZZ using longline, purse seines and trawls. and sometimes operating within coastal waters. This increased conflict and competition for fish between the foreign fleets and local fisherfolks. Increased fishery overexploitation and habitat degradation by foreign commercial fishing are threatening Somalia's coastal and marine resources. In the western Indian Ocean, there is a growing China commercial fishery for tuna that operates both within and beyond the Somali Exclusive Economic Zone. cause particular concern within the domestic fishing industry in Somalia. which put domestic fishers direct competition with foreign fishing companies. 
 Training Somali fishermen to use foreign technology. the regulations, and management measures needed to address problems in highly migratory species fisheries. The fishing pressure resulting from offshore fisheries is hard to estimate due to lack of data on size of foreign fleets and their annual.
 These vessels may target either tropical (yellowfin and bigeye tuna) or subtropical (albacore tuna) species.
 
 Three decades of illegal fishing: Challenges and Opportunities
-Indentification of issues
+## Indentification of issues
 1- To identify key issues to that contribute the current situation. 
 2- Establish Somalia tuna policy that includes highly migratory species as tuna species, marlins, oceanic sharks, sailfishes and swordfish.
 3- Establish unified national fisheries data collection. 
@@ -20,7 +20,7 @@ Somalia needs to develop improved gear and methods to increase catch, and establ
 IUU fishing in the Western Indian Ocean
 Somalia should not license foreign commercial fishing companies. Offshore tuna fishing licences launched in late 2018. Current system of licensing lack transparency and accountability. illegal vessels just recently denied the right of Somali fishers in Puntland to fish for lobster off this coast. In the meantime Somalia can generate revenue from with enforcing strict license conditions. who have used the media as a tool to mislead public. This was done to prevent the public from learning of inadmissible evidence through media reports. Need to address new issues that arise. and the fishery is important to all 6 three wecoast states.
 
-Fisheries management approach
+## Fisheries management approach
 Future approaches to manage the sector can be Ecosystem-based management and co-management but must be consulted dialogue, engagement, and collaboration with fisherfolks, as well as a range of diverse stakeholders.
 ways in which seafood is caught, processed, distributed, marketed, retailed, and consumed in Somalia. and marketing commercially valuable species. 
 The proposed legislation must protect the right of Somali fishers. community fisheries management. 
@@ -28,7 +28,7 @@ New Zealand now has a management system capable of protecting our fisheries reso
 For coastal states like Somalia it is a 'give with one hand, take away with the other' situation. 
 The purpose of the Act was to prevent overfishing , especially by foreign fleets , and to allow overfished stocks to recover.
 
-Somalia participationin the Indian Ocean Tuna Commission (IOTC)
+## Somalia participationin the Indian Ocean Tuna Commission (IOTC)
 Indian Ocean Tuna Commission is an intergovernmental organisation provides scientific information and management recommendations for stocks of yellowfin tuna develop quotas for HMS based on the total allowable catch (TAC) .
 Quota Allocations is required.
 Somalia has not been an active participant in IOTC due to lack of marine professionals and adequately trained personnel. 
@@ -38,9 +38,9 @@ According to Omar, the IOTC has ignored the warnings of the biologists and allow
 All I ask is that the EU end'give with one hand, take away with the other' situation.
 I am not certain it has ever been discussed. 
 
-Fishery Management Plan (FMP)
-Somalia lobster industry 
-Rock Lobster Fishery Management Plan (FMP)
+## Fishery Management Plan (FMP)
+## Somalia lobster industry 
+## Rock Lobster Fishery Management Plan (FMP)
 
 Biological Resources
 
@@ -157,5 +157,9 @@ Examples of opportunities to bridge the interests of government for the need for
 This approach is called co-management
 ○ Process of community-based co-management from its beginning, through implementation, to turnover to the community.
 ○ Turkey - for the patrol support 
+
+## Fishery Management Plan (FMP)
+## Somalia lobster industry 
+## Rock Lobster Fishery Management Plan (FMP)
 
 ## Mahadsanidiiin ##
