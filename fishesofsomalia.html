@@ -281,14 +281,22 @@ $(document).ready(function () {
    
  <style>  
         table{  
-            border-collapse: collapse;  
-            width: 80%;   
+		border: 1px solid blue;
+            	border-collapse: collapse;  
+            	width: 80%;   
         }  
-    th,td{  
-        border: 1px solid blue;
-	border-top: none!important;    
-        padding: 4px;  
-    }  
+    th {  
+  	border-top: 1px solid #000!important;
+  	border-bottom: 1px solid #000!important;
+  	border-left: 1px solid #000;
+  	border-right: 1px solid #000;
+}
+
+	 td {
+  	border-left: 1px solid #000;
+  	border-right: 1px solid #000;
+  	border-top: none!important;
+}  
                
     </style>  
 
