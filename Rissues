@@ -1,7 +1,0 @@
-(1)
-> library(devtools)
-Loading required package: usethis
-For anyone else finding this issue by searching for the error; the explicit workaround is to manually install the glue package first:
-install.packages("glue")
-install.packages("usethis") # Now won't fail with error above
-install.packages("devtools") # will hopefully work barring any problems with other dependencies
