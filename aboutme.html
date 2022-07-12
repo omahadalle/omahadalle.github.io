@@ -24,8 +24,20 @@
 <script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-<script src="/lib/webviewer.min.js"></script>
 
+<script src="resources/js/ie-emulation-modes-warning.js"></script>
+<script src="resources/js/jquery.min.js"></script> 	
+<script> 
+    $(function(){
+      $("#includedPresentations").load("presentations.html");
+      $("#included").load("funding.html");
+      $("#includedAwardsHonours").load("awards.html");
+      $("#includedTravel").load("travel_grants.html");
+      $("#includedConferencesAttended").load("conferences.html");
+      $("#includedReviewPublications").load("review_publications.html");
+      $("#includedFooter").load("footer.html");
+    });
+    </script>
   
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -166,12 +178,12 @@ body {
   border-color: transparent;
   border-style: solid;
   border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
+  border-left-color:#ff9999;
   margin-top: 5px;
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #cccccc;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -231,7 +243,7 @@ $(document).ready(function () {
   content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
-  padding: 10px;
+  padding: 100px;
   border-right: 1px solid #ddd;
 }
 
@@ -262,31 +274,29 @@ $(document).ready(function () {
  img {
   border-radius: 50%;
 }
-</style> 
+</style> 	
+	
+
 <!-- code folding -->
 
 
-  
+</head>
+
 <body>
 
-
-
-
-
-
-
-<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">
-    <div class="navbar-header">
+    <div class="navbar-header">    
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
+    <div id="navbar" class="navbar-collapse collapse">   
       <ul class="nav navbar-nav navbar-left">
-        <li>
+        
+<li>
   <a href="index.html">
     <span class="fa fa-home"></span>
      
@@ -295,19 +305,17 @@ $(document).ready(function () {
 </li>
 <li>
   <a href="aboutme.html">
-    <span class="fa fa-user"></span>
-     
-    About Me
+	 <span class="fa fa-user" aria-hidden="true"></span> About Me<br>
   </a>
 </li>
   <li>
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
-    <i class="fab fa-blogger-b"></i> Blog 
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+	<i class="fab fa-blogger-b"></i> Blog
     <span class="fa fa-caret-down"></span><br> 
     </a>
        <ul class="dropdown-menu">
-	  <li><a href="#">Data science</a></li>   
-          <li><a href="somalifisheries.html">Somali fisheries</a></li>
+	   <li><a href="#">Data science</a></li>  
+	   <li><a href="somalifisheries.html">Somali fisheries</a></li>
           
         </ul>
      </li>  
@@ -317,18 +325,17 @@ $(document).ready(function () {
     <span class="fa fa-caret-down"></span><br> 
     </a>
      <ul class="dropdown-menu">
-          <li><a href="#">Photography</a></li>
-          <li><a href="ketchdrawing.html">Sketch Drawing</a></li>
+          <li><a href="hotography.html">Photography</a></li>
+	  <li><a href="sketchdrawing.html">Sketch Drawing</a></li>   
         </ul>
-        <li>
-          	<li>
-  <a href="resources.html">
-    <span class="fa fa-external-link-square"></span>
+	<li>
+  		<a href="resources.html">
+    		<span class="fa fa-external-link-square"></span>
      
-    Resources
-  </a>
-</li>
-        <li>
+    		Resources
+  		</a>
+		</li>
+      <li>
           <a href="contactinfo.html">
             <span class="fa fa-address-book"></span>
      
