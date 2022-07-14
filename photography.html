@@ -269,36 +269,16 @@ $(document).ready(function () {
   display: none;
 }
 </style>
+  
+<style> 
+ img {
+  border-radius: 50%;
+}
+</style> 	
+	
 
 <!-- code folding -->
-	
-<style> 
-body{
-  background-color: #dedede;
-}
-.gallery{
-  display: flex;
-  width: 900px;
-  margin: auto;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-figure{
-  width: 200px;
-  margin: 8px 0;
-  border: 1px solid #777;
-  padding: 8px;
-  box-sizing: border-box;
-  background-color: #fff;
-}
-figure img{
-  width: 100%;
-}
-figure figcaption{
-  text-align: center;
-  padding: 8px 4px;
-}	
-</style>
+
 
 </head>
 
@@ -325,20 +305,18 @@ figure figcaption{
 </li>
 <li>
   <a href="aboutme.html">
-    <span class="fa fa-user"></span>
-     
-    About Me
+	 <span class="fa fa-user" aria-hidden="true"></span> About Me<br>
   </a>
 </li>
   <li>
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
-    <i class="fab fa-blogger-b"></i> Blog 
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+	<i class="fab fa-blogger-b"></i> Blog
     <span class="fa fa-caret-down"></span><br> 
     </a>
        <ul class="dropdown-menu">
+	   <li><a href="data_science.html">Data science</a></li>  
 	   <li><a href="somalifisheries.html">Somali fisheries</a></li>
-	   <li><a href="ishesofsomalia.html">Fishes of Somalia</a></li>
-          <li><a href="resources.html">Resources</a></li>
+          
         </ul>
      </li>  
 <li>
@@ -350,7 +328,14 @@ figure figcaption{
           <li><a href="photography.html">Photography</a></li>
 	  <li><a href="sketchdrawing.html">Sketch Drawing</a></li>   
         </ul>
-        <li>
+    <li>
+      <a href="resources.html">
+    	<span class="fa fa-external-link-square"></span>
+     
+    	Resources
+      </a>
+    </li>
+      	<li>
           <a href="contactinfo.html">
             <span class="fa fa-address-book"></span>
      
@@ -370,36 +355,39 @@ figure figcaption{
         <figcaption>1</figcaption>
       </figure>
       <figure>
-        <img src="images/Adobe_Post_20200416_0052200.8941275852755096.png">
+        <img src="images/L. fulvus.png">
         <figcaption>2</figcaption>
       </figure>
       <figure>
-        <img src="images/Adobe_Post_20200416_0052200.8941275852755096.png">
+        <img src="images/L. fulvus.png">
         <figcaption>3</figcaption>
       </figure>
       <figure>
-        <img src="images/Adobe_Post_20200416_0052200.8941275852755096.png">
+        <img src="images/L. fulvus.png">
         <figcaption>4</figcaption>
       </figure>
       <figure>
-        <img src="images/Adobe_Post_20200416_0052200.8941275852755096.png">
+        <img src="images/L. fulvus.png">
         <figcaption>5</figcaption>
       </figure>
       <figure>
-        <img src="images/Adobe_Post_20200416_0052200.8941275852755096.png">
+        <img src="images/L. fulvus.png">
         <figcaption>6</figcaption>
       </figure>
       <figure>
-        <img src="images/Adobe_Post_20200416_0052200.8941275852755096.png">
+        <img src="images/L. fulvus.png">
         <figcaption>7</figcaption>
       </figure>
       <figure>
-        <img src="images/Adobe_Post_20200416_0052200.8941275852755096.png">
+        <img src="images/L. fulvus.png">
         <figcaption>8</figcaption>
       </figure>
     </div>
+	   
+	 
+<hr class="featurette-divider">	      
+      
 
-   
       <!-- FOOTER -->
    <footer class="footer">
     <p class="footer__title"></p>
@@ -460,3 +448,8 @@ $(document).ready(function () {
 
 </body>
 </html>
+  
+
+
+   
+    
