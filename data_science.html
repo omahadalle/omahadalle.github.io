@@ -276,11 +276,28 @@ $(document).ready(function () {
 }
 </style>
   
-<style> 
- img {
-  border-radius: 50%;
+<style>
+.map.embed-container {
+    position: relative;
 }
-</style> 	
+.map.embed-container #map-notice {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgb(100, 100, 100);
+    /*for old IE browsers with no support for rgba()*/
+    background-color: rgba(0, 0, 0, .10);
+    color: #ccc;
+    padding: 8px;
+}
+.map.embed-container .map-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.10);
+}
+</style>	
 	
 
 <!-- code folding -->
