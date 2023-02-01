@@ -300,9 +300,11 @@ $(document).ready(function () {
 	
 .sawir{
 
-float: left;
+display: grid;
 
-width: 500px;
+grid-template-columns: 1fr 1fr 1fr;
+
+column-gap: 5px;
 
 }
 </style>	
@@ -380,7 +382,7 @@ width: 500px;
   
 	
 <div class="fluid-row" id="header">
-	
+
 	<div class="container">
 	<div class="sawir">
 	<h2>Map based interface</h2>
