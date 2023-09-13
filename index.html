@@ -35,29 +35,26 @@
 <!--<script> 
 
 
-    <!-- update any styles .js files you have linked -->
-    <script defer src="/assets/js/solid.js"></script>
-    <script defer src="/assets/js/brands.js"></script>
+<!-- Example: A theme's CSS that uses an older version of Font Awesome that can't be removed -->
+<link href="/site_libs/bootstrap-3.3.5" rel="stylesheet" />
 
-    <!-- update the core fontawesome.js file -->
-    <script defer src="/assets/js/fontawesome.js"></script>
+    <!-- Add the base CSS plus Solid + Brands styles **after previous versions** -->
+    <link href="/your_path_to_version_6_files/css/fontawesome.css" rel="stylesheet">
+    <link href="/your_path_to_version_6_files/css/brands.css" rel="stylesheet">
+    <link href="/your_path_to_version_6_files/css/solid.css" rel="stylesheet">
 
+    <!-- update existing v5 CSS to use v6 icons and assets **after previous versions** -->
+    <link href="/your-path-to-fontawesome/css/v5-font-face.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Your icons should show up and render using Font Awesome 6 -->
+  
 
-<!-- update the core fontawesome file -->
-    <link href="/assets/css/fontawesome.css" rel="stylesheet">
-
-    <!-- update any styles .css files you have linked -->
-    <link href="/assets/css/solid.css" rel="stylesheet">
-    <link href="/assets/css/brands.css" rel="stylesheet">
-
-    <!-- update existing v5 CSS to use v6 icons and assets -->
-    <link href="/assets/css/v5-font-face.css" rel="stylesheet" />
-
+  
 
 
 
-
-	
+<script>	
     $(function(){
       $("#includedPresentations").load("presentations.html");
       $("#included").load("funding.html");
