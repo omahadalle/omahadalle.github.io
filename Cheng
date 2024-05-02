@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blooming Hearts Flower Shop</title>
+</head>
+<body>
+  <header>
+    <h1>Blooming Hearts Flower Shop</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#occasions">Occasions</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Blooming Hearts</h2>
+      <p>We are a passionate flower shop dedicated to creating beautiful and meaningful floral arrangements for any occasion.  
+      Our flowers are always fresh and sourced locally whenever possible. Let us help you spread joy with the perfect blooms!</p>
+    </section>
+
+    <section id="products">
+      <h2>Our Products</h2>
+      <p>We offer a wide variety of flowers, including roses, lilies, tulips, and more. We also create cust
