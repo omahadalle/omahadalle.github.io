@@ -1,2 +1,2 @@
 # omahadalle.github.io
-My personal website! -Under construction.
+My personal website! - Under construction.
