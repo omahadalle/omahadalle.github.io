@@ -149,9 +149,6 @@ body {
   padding-left: 0px;
   padding-bottom: 0px;
 }
-.nav-link a {
-  text-decoration: none;
-}
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
   padding-top: 56px;
@@ -181,7 +178,7 @@ body {
   position: relative;
 }
 .dropdown-submenu>.dropdown-menu {
-  top: 0;
+  top: 0%;
   left: 100%;
   margin-top: -6px;
   margin-left: -1px;
@@ -199,7 +196,7 @@ body {
   border-color: transparent;
   border-style: solid;
   border-width: 5px 0 5px 5px;
-  border-left-color:#ff9999;
+  border-left-color: #c20e0e;
   margin-top: 5px;
   margin-right: -10px;
 }
@@ -239,20 +236,20 @@ $(document).ready(function () {
 <style type="text/css">
 .tabset-dropdown > .nav-tabs {
   display: inline-table;
-  max-height: 500px;
+  max-height: 50px;
   min-height: 44px;
   overflow-y: auto;
   background: red;
   border: 1px solid #c92222;
-  border-radius: 4px;
+  border-radius: 20px;
 }
 
 .tabset-dropdown > .nav-tabs > li.active:before {
   content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
-  padding: 0px;
-  border-right: 1px solid #c92e2e;
+  padding: 10px;
+  border-right: 20px solid #c92e2e;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
@@ -265,7 +262,7 @@ $(document).ready(function () {
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 100px;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #d61a1a;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -277,7 +274,7 @@ $(document).ready(function () {
 .tabset-dropdown > .nav-tabs > li > a:hover {
   border: none;
   display: inline-block;
-  border-radius: 4px;
+  border-radius: 1px;
   
 }
 
@@ -309,13 +306,13 @@ $(document).ready(function () {
     </button>  
 	 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    
- 
-	<!--<ul class="nav nav-pills">-->  
-   	<ul class="navbar-nav">
+   	<!--<ul class="navbar-nav">-->
+	<ul class="nav nav-tabs">
         <li class="nav-item">
-          <a href="index.html" class="btn btn-primary btn-lg" type="button" aria-selected="true">
-	<span class="fa fa-home"></span> Home </a>
+          <a href="index.html" class="btn btn-primary btn-lg active" type="button" aria-selected="true">
+	<span class="fa fa-home"></span>
+		  Home 
+	  </a>
         </li>
         <li class="nav-item">
         <a class="btn btn-primary btn-lg" type="button" href="aboutme.html" aria-expanded="false">
@@ -362,7 +359,7 @@ $(document).ready(function () {
 		
     </div><!--/.container -->
 	</nav>
-  </div><!--/.navbar -->	  
+  </div><!--/.navbar -->		  
 
 
   
