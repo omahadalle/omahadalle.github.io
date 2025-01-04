@@ -7,7 +7,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-
 <title>Omar Mahadalle</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -16,28 +15,19 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script> 
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
 <script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-   crossorigin=""/>
-<!-- Make sure you put this AFTER Leaflet's CSS -->
- <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
-   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
-   crossorigin=""></script>
-<script src="resources/js/ie-emulation-modes-warning.js"></script>
-<script src="resources/js/jquery.min.js"></script> 
-
-<!-- code folding -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">	
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	<!-- code folding -->
 	
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
+	
 <script src="resources/js/ie-emulation-modes-warning.js"></script>
 <script src="resources/js/jquery.min.js"></script> 	
 
@@ -45,21 +35,16 @@
 <link href="/site_libs/bootstrap-3.3.5" rel="stylesheet" />
 
 <!-- Add the base CSS plus Solid + Brands styles-->
-<link href="/assets/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
-<link href="/assets/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
-<link href="/assets/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
+<link href="/assets/fontawesome-free-6.7.2-web/css/fontawesome.css" rel="stylesheet">
+<link href="/assets/fontawesome-free-6.7.2-web/css/brands.css" rel="stylesheet">
+<link href="/assets/fontawesome-free-6.7.2-web/css/solid.css" rel="stylesheet">
 
 <!-- update existing v5 CSS to use v6 icons and assets -->
 <link href="/assets/fontawesome-free-6.4.2-web/css/v5-font-face.css" rel="stylesheet" />
 
 <!-- Your icons showed up and render using FA v6 -->
 
-
-
-
-
-	
-<script> 
+<script>	
     $(function(){
       $("#includedPresentations").load("presentations.html");
       $("#included").load("funding.html");
@@ -74,7 +59,7 @@
 <style type="text/css">
   code{white-space: pre-wrap;}
   span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
+  span.underline{text-decoration:  none;}
   div.column{display: inline-block; vertical-align: top; width: 50%;}
   div.hanging-indent{margin-left: 1.5em; text-indent: 1.5em;}
   ul.task-list{list-style: none;}
@@ -96,8 +81,8 @@ if (window.hljs) {
 }
 </script>
 
-
-
+<body style="background-color:#ededed;">
+	
 <style type="text/css">
 h1 {
   font-size: 34px;
@@ -120,17 +105,17 @@ h5 {
 h6 {
   font-size: 12px;
 }
+p {
+  font-size: 1.300em;
+}
 .table th:not([align]) {
   text-align: left;
 }
 </style>
 
-
-
-
 <style type = "text/css">
-.main-container {
-  max-width: 940px;
+.container {
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -142,7 +127,7 @@ img {
   max-width:100%;
 }
 .tabbed-pane {
-  padding-top: 12px;
+  padding-top: 5px;
 }
 .html-widget {
   margin-bottom: 20px;
@@ -153,15 +138,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+
 </style>
 
 
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 80px;
+  padding-top: 0px;
   padding-left: 0px;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
@@ -192,7 +178,7 @@ body {
   position: relative;
 }
 .dropdown-submenu>.dropdown-menu {
-  top: 0;
+  top: 0%;
   left: 100%;
   margin-top: -6px;
   margin-left: -1px;
@@ -210,12 +196,12 @@ body {
   border-color: transparent;
   border-style: solid;
   border-width: 5px 0 5px 5px;
-  border-left-color:#ff9999;
+  border-left-color: #c20e0e;
   margin-top: 5px;
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #cccccc;
+  border-left-color: #c92222;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -246,16 +232,16 @@ $(document).ready(function () {
 </script>
 
 <!-- tabsets -->
-
+<!--#ddd-->
 <style type="text/css">
 .tabset-dropdown > .nav-tabs {
   display: inline-table;
-  max-height: 500px;
+  max-height: 50px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  background: red;
+  border: 1px solid #c92222;
+  border-radius: 20px;
 }
 
 .tabset-dropdown > .nav-tabs > li.active:before {
@@ -263,7 +249,7 @@ $(document).ready(function () {
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
-  border-right: 1px solid #ddd;
+  border-right: 20px solid #c92e2e;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
@@ -276,7 +262,7 @@ $(document).ready(function () {
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 100px;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #d61a1a;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -288,7 +274,7 @@ $(document).ready(function () {
 .tabset-dropdown > .nav-tabs > li > a:hover {
   border: none;
   display: inline-block;
-  border-radius: 4px;
+  border-radius: 1px;
   
 }
 
@@ -301,110 +287,78 @@ $(document).ready(function () {
   display: none;
 }
 </style>
-  
-<style>
-.map.embed-container {
-    position: relative;
-}
-.map.embed-container #map-notice {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: rgb(100, 100, 100);
-    /*for old IE browsers with no support for rgba()*/
-    background-color: rgba(0, 0, 0, .10);
-    color: #ccc;
-    padding: 8px;
-}
-.map.embed-container .map-overlay {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 9999;
-    background-color: rgba(0, 0, 0, 0.10);
-}
-	
-.sawir{
-
-display: grid;
-grid-template-columns: 1fr 1fr;
-column-gap: 10px;
-max-width: 940px;
-margin-left: auto;
-margin-right: auto;	
-}
-</style>	
-	
-
-<!-- code folding -->
 
 
 </head>
+<!-- code folding -->
 
+	
 <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">    
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">   
-      <ul class="nav navbar-nav navbar-left">
+<!-- Navbar -->
+<div class="fluid-row" id="header">
+		 
+<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-primary">		
+<!--<nav class="navbar navbar-fixed-top navbar-expand-lg" style="background-color: #ffffff;">-->
+	<div class="container"> 
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>  
+	 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   	<ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="index.html" class="btn btn-primary btn-lg" type="button" aria-selected="true">
+	<span class="fa fa-home"></span>
+		  Home 
+	  </a>
+        </li>
+        <li class="nav-item">
+        <a class="btn btn-primary btn-lg" type="button" href="aboutme.html" aria-expanded="false">
+	<span class="fa fa-user"></span> 
+		About 
+	</a>
+        </li>
         
-<li>
-  <a href="index.html">
-    <span class="fa fa-home"></span>
-     
-    Home
-  </a>
-</li>
-<li>
-  <a href="aboutme.html">
-	 <span class="fa fa-user" aria-hidden="true"></span> About<br>
-  </a>
-</li>
-  <li>
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-	<i class="fab fa-blogger-b"></i> Blog
-    <span class="fa fa-caret-down"></span><br> 
-    </a>
-       <ul class="dropdown-menu">
-	   <li><a href="#">Data science</a></li>  
-	   <li><a href="somalifisheries.html">Somali fisheries</a></li>
-          
-        </ul>
-     </li>  
-<li>
-  <a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
-    <i class="fas fa-users"></i> Sci Commun 
-    <span class="fa fa-caret-down"></span><br> 
-    </a>
-     <ul class="dropdown-menu">
-          <li><a href="photography.html">Photography</a></li>
-	  <li><a href="sketchdrawing.html">Sketch Drawing</a></li>   
-        </ul>
-    <li>
-      <a href="resources.html">
-    	<span class="fas fa-bookmark"></span>
-     
-    	Resources
-      </a>
-    </li>
-      	<li>
-          <a href="contactinfo.html">
-            <span class="fa fa-address-book"></span>
-     
-            Contact
-            </a>
-         </li>
+        <li class="nav-item dropdown">
+         <a class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" href="#" aria-expanded="false" > 
+         <i class="fab fa-blogger-b"></i> Blog
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="data_science.html">Data science</a></li>
+            <li><a class="dropdown-item" href="#">Somali fisheries</a></li>
+            <li><a class="dropdown-item" href="#">Elasmobranch research</a></li>
+          </ul>
+        </li>
+	<li class="nav-item dropdown">
+          <a class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" href="#"  aria-expanded="false">
+           <i class="fas fa-users"></i> 
+		  Sci Commun
+        </a>
+          <ul class="dropdown-menu">
+            	<li><a class="dropdown-item" href="#">Photography</a></li>
+            	<li><a class="dropdown-item" href="#">Sketch drawing</a></li>
+		<li><a class="dropdown-item" href="#">Virtual museum of natural history</a></li>
+          </ul>
+        </li>
+		<li class="nav-item">
+          <a class="btn btn-primary btn-lg" href="resources.html" aria-expanded="false">
+		<span class="fas fa-bookmark"></span>
+			Resources
+		</a>
+	</li>
+		<li class="nav-item">
+         <a class="btn btn-primary btn-lg" href="contactinfo.html" aria-expanded="false">
+		<span class="fa fa-address-book"></span>
+			 Contact
+		</a>
+        </li>
       </ul>
-      </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
+	</div>
+		
+    </div><!--/.container -->
+	</nav>
+  </div><!--/.navbar -->
   
 	
 <div class="fluid-row" id="header">
