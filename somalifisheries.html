@@ -1,4 +1,367 @@
+<!DOCTYPE html>
+<html class="chapters">
 
+<head>
+<meta charset="utf-8" />
+<meta name="generator" content="website"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<title>Omar Mahadalle</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script> 
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">	
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	<!-- code folding -->
+	
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+	
+<script src="resources/js/ie-emulation-modes-warning.js"></script>
+<script src="resources/js/jquery.min.js"></script> 	
+
+<!-- FA that can't be removed -->
+<link href="/site_libs/bootstrap-3.3.5" rel="stylesheet" />
+
+<!-- Add the base CSS plus Solid + Brands styles-->
+<link href="/assets/fontawesome-free-6.7.2-web/css/fontawesome.css" rel="stylesheet">
+<link href="/assets/fontawesome-free-6.7.2-web/css/brands.css" rel="stylesheet">
+<link href="/assets/fontawesome-free-6.7.2-web/css/solid.css" rel="stylesheet">
+
+<!-- update existing v5 CSS to use v6 icons and assets -->
+<link href="/assets/fontawesome-free-6.4.2-web/css/v5-font-face.css" rel="stylesheet" />
+
+<!-- Your icons showed up and render using FA v6 -->
+
+<script>	
+    $(function(){
+      $("#includedPresentations").load("presentations.html");
+      $("#included").load("funding.html");
+      $("#includedAwardsHonours").load("awards.html");
+      $("#includedTravel").load("travel_grants.html");
+      $("#includedConferencesAttended").load("conferences.html");
+      $("#includedReviewPublications").load("review_publications.html");
+      $("#includedFooter").load("footer.html");
+    });
+    </script>
+  
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration:  none;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: 1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+<body style="background-color:#ededed;">
+	
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+p {
+  font-size: 1.300em;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<style type = "text/css">
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 5px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+.nav-link a {
+  text-decoration: none;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color:#ff9999;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #c92222;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+<!--#ddd-->
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: red;
+  border: 1px solid #c92222;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 0px;
+  border-right: 1px solid #c92e2e;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 100px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+</head>
+<!-- code folding -->
+
+	
+<body>
+
+<!-- Navbar -->
+<div class="fluid-row" id="header">
+		 
+<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-primary">		
+<!--<nav class="navbar navbar-fixed-top navbar-expand-lg" style="background-color: #ffffff;">-->
+	<div class="container"> 
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>  
+	 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    
+ 
+	<!--<ul class="nav nav-pills">-->  
+   	<ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="index.html" class="btn btn-primary btn-lg" type="button" aria-selected="true">
+	<span class="fa fa-home"></span> Home </a>
+        </li>
+        <li class="nav-item">
+        <a class="btn btn-primary btn-lg" type="button" href="aboutme.html" aria-expanded="false">
+	<span class="fa fa-user"></span> 
+		About 
+	</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+         <a class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" href="#" aria-expanded="false" > 
+         <i class="fab fa-blogger-b"></i> Blog
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="data_science.html">Data science</a></li>
+            <li><a class="dropdown-item" href="somalifisheries">Somali fisheries</a></li>
+            <li><a class="dropdown-item" href="elasmobranchresearch.html">Elasmobranch research</a></li>
+          </ul>
+        </li>
+	<li class="nav-item dropdown">
+          <a class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" href="#"  aria-expanded="false">
+           <i class="fas fa-users"></i> 
+		  Sci Commun
+        </a>
+          <ul class="dropdown-menu">
+            	<li><a class="dropdown-item" href="photography.html">Photography</a></li>
+            	<li><a class="dropdown-item" href="sketchdrawing.html">Sketch drawing</a></li>
+		<li><a class="dropdown-item" href="virtuamuseum.html">Virtual museum of natural history</a></li>
+          </ul>
+        </li>
+		<li class="nav-item">
+          <a class="btn btn-primary btn-lg" href="resources.html" aria-expanded="false">
+		<span class="fas fa-bookmark"></span>
+			Resources
+		</a>
+	</li>
+		<li class="nav-item">
+         <a class="btn btn-primary btn-lg" href="contactinfo.html" aria-expanded="false">
+		<span class="fa fa-address-book"></span>
+			 Contact
+		</a>
+        </li>
+      </ul>
+	</div>
+		
+    </div><!--/.container -->
+	</nav>
+  </div><!--/.navbar -->
 	   
 	 
 
