@@ -1,447 +1,432 @@
 <!DOCTYPE html>
-<html class="chapters">
-
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="generator" content="website"/>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Somali Fisheries | Omar Mahadalle</title>
+  <meta name="description" content="Notes on Somalia's fisheries and marine environment by marine biologist Omar Mahadalle.">
+  <meta property="og:title" content="Somali Fisheries | Omar Mahadalle">
+  <meta property="og:description" content="Notes on Somalia's fisheries and marine environment.">
+  <meta property="og:image" content="images/Rhynchobatus%20djiddensis%202023-12-13%2003.34.39.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #1f2933;
+      --muted: #5f6b76;
+      --line: #e4e7eb;
+      --accent: #1f5f8b;       /* deep ocean blue */
+      --accent-soft: #e8f0f6;
+      --bg: #ffffff;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Source Sans 3', Arial, sans-serif;
+      font-size: 1.08rem;
+      line-height: 1.7;
+    }
+    h1, h2, h3 { font-family: 'Source Serif 4', Georgia, serif; color: var(--ink); text-wrap: balance; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Navbar: same as the homepage */
+    .navbar { background: #fff; border-bottom: 1px solid var(--line); }
+    .navbar-brand { font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; color: var(--ink) !important; }
+    .navbar .nav-link { color: var(--muted); font-weight: 500; }
+    .navbar .nav-link:hover, .navbar .nav-link.active { color: var(--accent); }
+    .dropdown-item:active { background: var(--accent); }
+
+    .page { max-width: 860px; }
+
+    /* Icons: Font Awesome Free (CC BY 4.0), built into the page as SVG */
+    .ico { width: 1em; height: 1em; display: inline-block; vertical-align: -0.125em; }
+
+    /* Page header */
+    .page-head { padding: 3.5rem 0 2rem; }
+    .eyebrow { color: var(--accent); font-weight: 600; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .4rem; }
+    .page-head h1 { font-size: 2.4rem; font-weight: 700; margin-bottom: .75rem; }
+    .lede { font-size: 1.2rem; color: var(--muted); }
+
+    .btn-accent { background: var(--accent); color: #fff; border: none; }
+    .btn-accent:hover { background: #174a6d; color: #fff; text-decoration: none; }
+    .btn-outline-accent { border: 1px solid var(--accent); color: var(--accent); }
+    .btn-outline-accent:hover { background: var(--accent-soft); text-decoration: none; }
+
+    /* Sections */
+    section { padding: 2rem 0; border-top: 1px solid var(--line); }
+    section h2 { font-size: 1.5rem; margin-bottom: 1.1rem; }
 
 
-<title>Omar Mahadalle</title>
+    section p { margin-bottom: .9rem; }
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script> 
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">	
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-	<!-- code folding -->
-	
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+    /* ---------- Era timeline chart ---------- */
+    .era-1 { --era: #dce8f1; --era-ink: var(--ink); }
+    .era-2 { --era: #b3cde2; --era-ink: var(--ink); }
+    .era-3 { --era: #85adcf; --era-ink: var(--ink); }
+    .era-4 { --era: #4f86b5; --era-ink: #ffffff; }
+    .era-5 { --era: #2b6493; --era-ink: #ffffff; }
+    .era-6 { --era: #173f63; --era-ink: #ffffff; }
 
-	
-<script src="resources/js/ie-emulation-modes-warning.js"></script>
-<script src="resources/js/jquery.min.js"></script> 	
+    .tl { margin: 1.25rem 0 .5rem; position: relative; }
+    .tl-bar { display: flex; gap: 2px; height: 44px; }
+    .tl-seg {
+      position: relative; min-width: 0; border: 0; padding: 0; background: var(--era); color: var(--era-ink);
+      font-size: .82rem; font-weight: 600; font-variant-numeric: tabular-nums; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; transition: filter .15s ease, transform .15s ease;
+    }
+    .tl-seg:first-child { border-radius: 4px 0 0 4px;
+      background: repeating-linear-gradient(135deg, var(--era) 0 6px, #eef4f8 6px 9px); }
+    .tl-seg:last-child { border-radius: 0 4px 4px 0; }
+    .tl-seg:hover, .tl-seg:focus-visible, .tl-seg.on { filter: brightness(1.06); transform: translateY(-2px); }
+    .tl-seg:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+    .tl-axis { position: relative; height: 1.6rem; margin-top: .35rem; border-top: 1px solid var(--line); }
+    .tl-tick { position: absolute; top: 0; transform: translateX(-50%); font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; padding-top: .3rem; }
+    .tl-tick::before { content: ""; position: absolute; left: 50%; top: -1px; width: 1px; height: 5px; background: #c3ccd4; }
+    .tl-tip {
+      position: absolute; z-index: 5; pointer-events: none; background: #fff; border: 1px solid var(--line);
+      border-radius: 6px; box-shadow: 0 4px 14px rgba(20,40,60,.12); padding: .55rem .75rem; font-size: .88rem;
+      line-height: 1.4; max-width: 240px; transform: translate(-50%, calc(-100% - 10px));
+    }
+    .tl-tip strong { display: block; }
+    .tl-tip span { color: var(--muted); }
 
-<!-- FA that can't be removed -->
-<link href="/site_libs/bootstrap-3.3.5" rel="stylesheet" />
+    .tl-legend { list-style: none; padding: 0; margin: .5rem 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .45rem 1.25rem; }
+    .tl-legend a { display: flex; align-items: baseline; gap: .5rem; color: var(--ink); text-decoration: none; font-size: .93rem; }
+    .tl-legend a:hover .nm { color: var(--accent); text-decoration: underline; }
+    .tl-legend .sw { flex: 0 0 auto; width: 1.35rem; height: 1.35rem; border-radius: 3px; background: var(--era); color: var(--era-ink);
+      font-size: .74rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; transform: translateY(.2rem); }
+    .tl-legend .yr { display: block; color: var(--muted); font-size: .83rem; font-variant-numeric: tabular-nums; }
+    .chart-note { font-size: .85rem; color: var(--muted); margin-top: .9rem; }
 
-<!-- Add the base CSS plus Solid + Brands styles-->
-<link href="/assets/fontawesome-free-6.7.2-web/css/fontawesome.css" rel="stylesheet">
-<link href="/assets/fontawesome-free-6.7.2-web/css/brands.css" rel="stylesheet">
-<link href="/assets/fontawesome-free-6.7.2-web/css/solid.css" rel="stylesheet">
+    /* ---------- Era sections ---------- */
+    .era-sec h2 { display: flex; align-items: baseline; gap: .6rem; }
+    .era-sec h2 .sw { flex: 0 0 auto; width: 1.7rem; height: 1.7rem; border-radius: 4px; background: var(--era); color: var(--era-ink);
+      font-family: 'Source Sans 3', Arial, sans-serif; font-size: .9rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; transform: translateY(.15rem); }
+    .era-years { font-size: .82rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: -.6rem 0 .8rem 2.3rem; font-variant-numeric: tabular-nums; }
+    .events { list-style: none; padding: 0; margin: 1rem 0 0; border-left: 2px solid var(--line); }
+    .events li { position: relative; display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: .75rem; padding: 0 0 .7rem 1rem; }
+    .events li::before { content: ""; position: absolute; left: -6px; top: .55rem; width: 10px; height: 10px; border-radius: 50%; background: #fff; border: 2px solid var(--accent); }
+    .events time { font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums; }
+    .src { font-size: .82rem; color: var(--muted); margin-top: .4rem; }
+    .src a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
 
-<!-- update existing v5 CSS to use v6 icons and assets -->
-<link href="/assets/fontawesome-free-6.4.2-web/css/v5-font-face.css" rel="stylesheet" />
+    @media (max-width: 760px) {
+      .tl-legend { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .tl-bar { height: 36px; }
+      .tl-seg { font-size: .72rem; }
+    }
+    @media (max-width: 420px) {
+      .events li { grid-template-columns: 1fr; gap: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { .tl-seg { transition: none; } }
 
-<!-- Your icons showed up and render using FA v6 -->
+    /* Figure */
+    .figure { margin: 1rem 0 0; }
+    .figure img { width: 100%; height: auto; display: block; border-radius: 6px; background: var(--accent-soft); }
+    .figure figcaption { font-size: .9rem; color: var(--muted); margin-top: .45rem; }
 
-<script>	
-    $(function(){
-      $("#includedPresentations").load("presentations.html");
-      $("#included").load("funding.html");
-      $("#includedAwardsHonours").load("awards.html");
-      $("#includedTravel").load("travel_grants.html");
-      $("#includedConferencesAttended").load("conferences.html");
-      $("#includedReviewPublications").load("review_publications.html");
-      $("#includedFooter").load("footer.html");
-    });
-    </script>
-  
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration:  none;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: 1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
+    /* Related links */
+    .related { list-style: none; padding: 0; margin: 0; display: grid; gap: .8rem; }
+    .related a { font-weight: 600; }
+    .related span { display: block; color: var(--muted); font-size: .93rem; }
 
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
+    @media (max-width: 576px) {
+      .page-head { padding-top: 2rem; }
+      .page-head h1 { font-size: 2rem; }
+    }
 
-<body style="background-color:#ededed;">
-	
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-p {
-  font-size: 1.300em;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
-
-<style type = "text/css">
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 5px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-
-</style>
-
-
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-bottom: 0px;
-}
-.nav-link a {
-  text-decoration: none;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color:#ff9999;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #c92222;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
-
-<!-- tabsets -->
-<!--#ddd-->
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: red;
-  border: 1px solid #c92222;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 0px;
-  border-right: 1px solid #c92e2e;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 100px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
+    footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; padding: 1.5rem 0; margin-top: 1rem; }
+  </style>
 </head>
-<!-- code folding -->
 
-	
 <body>
 
-<!-- Navbar -->
-<div class="fluid-row" id="header">
-		 
-<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-primary">		
-<!--<nav class="navbar navbar-fixed-top navbar-expand-lg" style="background-color: #ffffff;">-->
-	<div class="container"> 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container page">
+    <a class="navbar-brand" href="index.html">Omar Mahadalle</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>  
-	 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    
- 
-	<!--<ul class="nav nav-pills">-->  
-   	<ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="index.html" class="btn btn-primary btn-lg" type="button" aria-selected="true">
-	<span class="fa fa-home"></span> Home </a>
-        </li>
-        <li class="nav-item">
-        <a class="btn btn-primary btn-lg" type="button" href="aboutme.html" aria-expanded="false">
-	<span class="fa fa-user"></span> 
-		About 
-	</a>
-        </li>
-        
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutme.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#research">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#publications">Publications</a></li>
         <li class="nav-item dropdown">
-         <a class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" href="#" aria-expanded="false" > 
-         <i class="fab fa-blogger-b"></i> Blog
-          </a>
-          <ul class="dropdown-menu">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+          <ul class="dropdown-menu dropdown-menu-end">
             <li><a class="dropdown-item" href="data_science.html">Data science</a></li>
-            <li><a class="dropdown-item" href="somalifisheries">Somali fisheries</a></li>
-            <li><a class="dropdown-item" href="elasmobranchresearch.html">Elasmobranch research</a></li>
+            <li><a class="dropdown-item active" aria-current="page" href="somalifisheries.html">Somali fisheries</a></li>
+            <li><a class="dropdown-item" href="elasmobranchresearch.html">Sharks and rays of Somalia</a></li>
           </ul>
         </li>
-	<li class="nav-item dropdown">
-          <a class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" href="#"  aria-expanded="false">
-           <i class="fas fa-users"></i> 
-		  Sci Commun
-        </a>
-          <ul class="dropdown-menu">
-            	<li><a class="dropdown-item" href="photography.html">Photography</a></li>
-            	<li><a class="dropdown-item" href="sketchdrawing.html">Sketch drawing</a></li>
-		<li><a class="dropdown-item" href="virtuamuseum.html">Virtual museum of natural history</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Outreach</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="photography.html">Photography</a></li>
+            <li><a class="dropdown-item" href="sketchdrawing.html">Sketch drawing</a></li>
+            <li><a class="dropdown-item" href="virtualmuseum.html">Virtual museum of natural history</a></li>
           </ul>
         </li>
-		<li class="nav-item">
-          <a class="btn btn-primary btn-lg" href="resources.html" aria-expanded="false">
-		<span class="fas fa-bookmark"></span>
-			Resources
-		</a>
-	</li>
-		<li class="nav-item">
-         <a class="btn btn-primary btn-lg" href="contactinfo.html" aria-expanded="false">
-		<span class="fa fa-address-book"></span>
-			 Contact
-		</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactinfo.html">Contact</a></li>
       </ul>
-	</div>
-		
-    </div><!--/.container -->
-	</nav>
-  </div><!--/.navbar -->
-	   
- 
+    </div>
+  </div>
+</nav>
+<main class="container page">
 
-	
-      <div class="fluid-row" id="header">
-	
-	<div class="container about">	
-	<h5><strong>Fisheries in Somalia </strong></h5>
-	
-		
-	<div class="container about">
-	<div class="sawir">
-	<div>
-		<img src="images/Rhynchobatus djiddensis 2023-12-13 03.34.39.png"class="img-thumbnail" alt="sites">
-	</div>
-	<div>
-		<p> Image: <i>Rhynchobatus djiddensis</i>, by Abdishakur Farah</p>
-	</div>	
-	
-	<hr class="featurette-divider">	
-	
-      <!-- FOOTER -->
-   <footer class="footer">
-    <p class="footer__title"></p>
-    <p class="footer__subtitle"></p>
+  <div class="page-head">
+    <div class="eyebrow">Blog · Somali fisheries</div>
+    <h1>Fisheries in Somalia: the bigger picture</h1>
+    <p class="lede">
+      Somalia has the longest coastline in mainland Africa, yet its fisheries remain largely unstudied. Today's
+      problems make more sense when you follow how the sector has changed across six eras.
+    </p>
+  </div>
+
+  <!-- ===== Timeline chart ===== -->
+  <section id="timeline">
+    <h2>Six eras at a glance</h2>
+    <p>Each band shows how long an era lasted. Hover or tap a band for details, or choose an era to jump to it.</p>
+    <div class="tl" id="tl">
+      <div class="tl-bar" id="tl-bar" role="list" aria-label="Timeline of six eras in Somali fisheries"></div>
+      <div class="tl-axis" id="tl-axis" aria-hidden="true"></div>
+      <div class="tl-tip" id="tl-tip" hidden></div>
+    </div>
+    <ol class="tl-legend" id="tl-legend"></ol>
+    <p class="chart-note">
+      The striped band is not to scale: Somali coastal communities fished for centuries before colonial rule.
+      Era boundaries follow major political turning points; the civil war band ends in 2012, when the Federal
+      Government was formed.
+    </p>
+  </section>
+
+  <!-- ===== Era 1 ===== -->
+  <!-- STATS TO ADD: estimated number of coastal fishing communities; main species and gear; trade goods
+       (dried fish, shark fin) moving through Benadir and northern ports. Sources: travellers' accounts,
+       historical studies of Indian Ocean trade. -->
+  <section id="era-precolonial" class="era-sec era-1">
+    <h2><span class="sw" aria-hidden="true">1</span>Coastal livelihoods before colonial rule</h2>
+    <div class="era-years">Pre-colonial · before the 1880s</div>
+    <p>
+      For centuries, Somali coastal communities fished the Gulf of Aden and the Indian Ocean from small boats,
+      while Benadir ports such as Mogadishu, Merca and Barawa traded across the Indian Ocean world. Fishing was
+      small-scale and closely tied to local diets and trade, alongside pastoralism inland.
+    </p>
+  </section>
+
+  <!-- ===== Era 2 ===== -->
+  <!-- STATS TO ADD: colonial-era catch or export figures; number of processing plants and their output;
+       size of the fishing workforce. Sources: Italian and British colonial reports, archives. -->
+  <section id="era-colonial" class="era-sec era-2">
+    <h2><span class="sw" aria-hidden="true">2</span>Colonial rule and early commercial fishing</h2>
+    <div class="era-years">Colonial · 1880s–1960</div>
+    <p>
+      Britain and Italy divided the Somali coast into British Somaliland in the north and Italian Somaliland
+      in the south. Fishing remained largely small-scale and subsistence, part of an economy built on farming,
+      herding and trade.
+    </p>
+    <ul class="events">
+      <li><time>1880s</time><span>Britain and Italy establish protectorates along the Somali coast.</span></li>
+      <li><time>1950</time><span>Italian Somaliland becomes a UN Trust Territory under Italian administration, until 1960.</span></li>
+    </ul>
+  </section>
+
+  <!-- ===== Era 3 ===== -->
+  <!-- STATS TO ADD: first national catch estimates; number of fishers and boats; fisheries' share of GDP;
+       early development projects. Sources: FAO country reports, early Somali Republic statistics. -->
+  <section id="era-independence" class="era-sec era-3">
+    <h2><span class="sw" aria-hidden="true">3</span>Independence and the civilian years</h2>
+    <div class="era-years">Independence · 1960–1969</div>
+    <p>
+      The new Somali Republic inherited a fisheries sector that was small and poorly documented, with most
+      economic attention on livestock and banana exports.
+    </p>
+    <ul class="events">
+      <li><time>1960</time><span>British Somaliland (26 June) and the Trust Territory (1 July) gain independence and unite as the Somali Republic.</span></li>
+    </ul>
+  </section>
+
+  <!-- ===== Era 4 ===== -->
+  <!-- STATS TO ADD: annual catch; number of cooperative members; cannery output by year; fish exports;
+       fleet size, including Soviet-era trawlers. Sources: FAO FishStat, government reports, World Bank. -->
+  <section id="era-military" class="era-sec era-4">
+    <h2><span class="sw" aria-hidden="true">4</span>State-led fisheries under military rule</h2>
+    <div class="era-years">Military government · 1969–1991</div>
+    <p>
+      The military government made fisheries part of its development plans. After the 1974–75 drought, about
+      90,000 nomads were resettled into farming and fishing cooperatives. The cooperatives struggled to become
+      profitable, and fishing remained under 1 percent of GDP in the early 1970s, despite an estimated
+      potential yield of 150,000 tons a year.
+    </p>
+    <ul class="events">
+      <li><time>1969</time><span>Military coup brings Siad Barre to power.</span></li>
+      <li><time>c. 1970</time><span>Government builds a fish cannery and pier at Laas Qoray.</span></li>
+      <li><time>1974–75</time><span>Severe drought; about 90,000 nomads are resettled into farming and fishing cooperatives.</span></li>
+      <li><time>1975</time><span>Fishing cooperatives set up at Eyl, Cadale and Baraawe. Laas Qoray produces 2,220 tons of canned fish.</span></li>
+      <li><time>1978</time><span>Soviet personnel leave; Australia and Italy take over support for fishing projects.</span></li>
+      <li><time>1979</time><span>Laas Qoray's canned fish output falls to negligible levels.</span></li>
+    </ul>
+    <p class="src">Sources: <a href="https://en.wikipedia.org/wiki/Economic_history_of_Somalia" target="_blank" rel="noopener">Economic history of Somalia</a>; <a href="https://en.wikipedia.org/wiki/Las_Khorey" target="_blank" rel="noopener">Las Khorey</a>. Replace with primary sources as you collect them.</p>
+  </section>
+
+  <!-- ===== Era 5 ===== -->
+  <!-- STATS TO ADD: estimated foreign (IUU) catch vs. domestic catch; number of foreign vessels; piracy
+       incidents per year; tsunami damage to fishing communities. Sources: Sea Around Us, IOTC reports,
+       Global Fishing Watch, IMB piracy reports, UN reports. -->
+  <section id="era-civilwar" class="era-sec era-5">
+    <h2><span class="sw" aria-hidden="true">5</span>State collapse and unguarded waters</h2>
+    <div class="era-years">Civil war · 1991–2012</div>
+    <p>
+      With no functioning central government, Somalia's waters went largely unmonitored. Foreign vessels fished
+      with little oversight, state fishing infrastructure such as the Laas Qoray cannery shut down, and coastal
+      communities lost both income and protection.
+    </p>
+    <ul class="events">
+      <li><time>1991</time><span>Central government collapses and civil war spreads.</span></li>
+      <li><time>2004</time><span>The Indian Ocean tsunami strikes Somalia's coast.</span></li>
+      <li><time>Late 2000s</time><span>Piracy surges off Somalia, peaking around 2011.</span></li>
+    </ul>
+  </section>
+
+  <!-- ===== Era 6 ===== -->
+  <!-- STATS TO ADD: licensed vessels and licence revenue per year; domestic catch trends; fish exports;
+       number of fishers; IUU estimates since 2014. Sources: Ministry of Fisheries and Blue Economy, World Bank,
+       FAO, IOTC national reports, Global Fishing Watch. -->
+  <section id="era-postconflict" class="era-sec era-6">
+    <h2><span class="sw" aria-hidden="true">6</span>Rebuilding fisheries governance</h2>
+    <div class="era-years">Post-conflict · 2012–present</div>
+    <p>
+      Since the Federal Government formed, Somalia has begun to claim and manage its waters: declaring an
+      exclusive economic zone, revising its fisheries law, and licensing foreign tuna vessels for a fee. Enforcement
+      and data collection remain major gaps.
+    </p>
+    <ul class="events">
+      <li><time>2012</time><span>The Federal Government of Somalia is formed.</span></li>
+      <li><time>2014</time><span>Somalia proclaims a 200-nautical-mile exclusive economic zone (30 June) and revises its fisheries law.</span></li>
+      <li><time>2018</time><span>First fishing licences issued: 31 Chinese tuna longliners, for first-year fees of US$1,045,000.</span></li>
+    </ul>
+    <p class="src">Sources: <a href="https://leap.unep.org/en/countries/so/national-legislation/proclamation-president-federal-republic-somalia-30-june-2014-eez" target="_blank" rel="noopener">EEZ proclamation, 30 June 2014 (FAOLEX)</a>; <a href="https://www.worldbank.org/en/news/factsheet/2019/03/07/somalia-issues-fishing-licenses-fees-will-help-develop-fisheries-sector" target="_blank" rel="noopener">World Bank, 2019</a>.</p>
+    <!-- TODO: decide how to treat Somaliland, which has its own fisheries administration since 1991 -->
+  </section>
+
+  <!-- TODO: rename the image without spaces, and confirm permission from the illustrator -->
+  <section id="species">
+    <h2>Species in focus</h2>
+    <figure class="figure">
+      <img src="images/Rhynchobatus%20djiddensis%202023-12-13%2003.34.39.png"
+           alt="Illustration of a giant guitarfish, Rhynchobatus djiddensis" loading="lazy">
+      <figcaption>Giant guitarfish (<em>Rhynchobatus djiddensis</em>). Illustration by Abdishakur Farah.</figcaption>
+    </figure>
+  </section>
+
+  <section id="related">
+    <h2>Related work</h2>
+    <ul class="related">
+      <li>
+        <a href="elasmobranchresearch.html">Sharks and rays of Somalia</a>
+        <span>Fieldwork at landing sites, IUCN assessments, and my dwarf gulper shark project.</span>
+      </li>
+      <li>
+        <a href="data_science.html">Data science</a>
+        <span>Field-site maps and a preliminary analysis of fishing effort.</span>
+      </li>
+      <li>
+        <a href="resources.html#fisheries">Fisheries reading list</a>
+        <span>Articles on foreign fishing, tuna and fisheries in the Western Indian Ocean.</span>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container page d-flex flex-wrap justify-content-between gap-2">
+    <span>&copy; 2026 Omar Mahadalle</span>
+    <span>Last updated October 2026</span>
+  </div>
 </footer>
- 
- <!-- Google Analytics -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  /* Era timeline. "from"/"to" set each band's width; the first band is drawn as a fixed stub. */
+  var ERAS = [
+    { n: 1, name: 'Pre-colonial',        label: 'before 1880s', from: null, to: 1884, id: 'era-precolonial' },
+    { n: 2, name: 'Colonial',            label: '1880s–1960',   from: 1884, to: 1960, id: 'era-colonial' },
+    { n: 3, name: 'Independence',        label: '1960–1969',    from: 1960, to: 1969, id: 'era-independence' },
+    { n: 4, name: 'Military government', label: '1969–1991',    from: 1969, to: 1991, id: 'era-military' },
+    { n: 5, name: 'Civil war',           label: '1991–2012',    from: 1991, to: 2012, id: 'era-civilwar' },
+    { n: 6, name: 'Post-conflict',       label: '2012–present', from: 2012, to: new Date().getFullYear(), id: 'era-postconflict' }
+  ];
+  var STUB = 14; // width of the pre-colonial stub, in "years"
+  var START = 1884, END = ERAS[ERAS.length - 1].to;
+  var total = STUB + (END - START);
 
-ga('create', 'UA-XXXXX-Y', 'auto');
-ga('send', 'pageview');
-</script>
-<!-- End Google Analytics --> 
-  
-  
-<script>
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
+  var bar = document.getElementById('tl-bar'), axis = document.getElementById('tl-axis');
+  var tip = document.getElementById('tl-tip'), tl = document.getElementById('tl');
+  var legend = document.getElementById('tl-legend');
 
+  function eventsIn(id) { return document.querySelectorAll('#' + id + ' .events li').length; }
+  function go(id) { var el = document.getElementById(id); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
 
-</script>
+  ERAS.forEach(function (e) {
+    var w = e.from === null ? STUB : e.to - e.from;
+    var seg = document.createElement('button');
+    seg.type = 'button'; seg.className = 'tl-seg era-' + e.n; seg.setAttribute('role', 'listitem');
+    seg.style.flex = w + ' 1 0';
+    seg.textContent = e.n;
+    var n = eventsIn(e.id);
+    seg.setAttribute('aria-label', e.name + ', ' + e.label + (n ? ', ' + n + ' key events' : '') + '. Jump to section.');
+    function showTip() {
+      var r = seg.getBoundingClientRect(), box = tl.getBoundingClientRect();
+      tip.innerHTML = '';
+      var st = document.createElement('strong'); st.textContent = e.n + '. ' + e.name; tip.appendChild(st);
+      var sp = document.createElement('span'); sp.textContent = e.label + (e.from !== null ? ' · ' + w + ' years' : '') + (n ? ' · ' + n + ' key events' : ''); tip.appendChild(sp);
+      var x = r.left - box.left + r.width / 2;
+      x = Math.max(110, Math.min(box.width - 110, x));
+      tip.style.left = x + 'px'; tip.style.top = (r.top - box.top) + 'px';
+      tip.hidden = false;
+      bar.querySelectorAll('.tl-seg').forEach(function (b) { b.classList.toggle('on', b === seg); });
+    }
+    function hideTip() { tip.hidden = true; seg.classList.remove('on'); }
+    seg.addEventListener('mouseenter', showTip);
+    seg.addEventListener('mouseleave', hideTip);
+    seg.addEventListener('focus', showTip);
+    seg.addEventListener('blur', hideTip);
+    seg.addEventListener('click', function () { go(e.id); });
+    bar.appendChild(seg);
 
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    var li = document.createElement('li');
+    var a = document.createElement('a'); a.href = '#' + e.id; a.className = 'era-' + e.n;
+    a.innerHTML = '<span class="sw" aria-hidden="true">' + e.n + '</span><span><span class="nm"></span><span class="yr"></span></span>';
+    a.querySelector('.nm').textContent = e.name; a.querySelector('.yr').textContent = e.label;
+    a.addEventListener('click', function (ev) { ev.preventDefault(); go(e.id); });
+    li.appendChild(a); legend.appendChild(li);
   });
-});
+
+  // Axis ticks, placed on the same scale as the bands (2px gaps are small enough to ignore)
+  function drawAxis() {
+    axis.innerHTML = '';
+    var narrow = axis.clientWidth < 520;
+    var years = narrow ? [1900, 1950, 2000] : [1900, 1925, 1950, 1975, 2000];
+    years.forEach(function (y) {
+      var t = document.createElement('span'); t.className = 'tl-tick';
+      t.style.left = ((STUB + (y - START)) / total * 100) + '%';
+      t.textContent = y; axis.appendChild(t);
+    });
+  }
+  drawAxis();
+  window.addEventListener('resize', drawAxis);
 </script>
-
-<!-- code folding -->
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
 </body>
 </html>
-
-
