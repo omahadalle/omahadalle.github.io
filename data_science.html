@@ -1,477 +1,190 @@
 <!DOCTYPE html>
-<html class="chapters">
-
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="generator" content="website"/>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-
-
-<title>Omar Mahadalle</title>
-
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script> 
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">	
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-	<!-- code folding -->
-	
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-	
-<script src="resources/js/ie-emulation-modes-warning.js"></script>
-<script src="resources/js/jquery.min.js"></script> 	
-
-<!-- FA that can't be removed -->
-<link href="/site_libs/bootstrap-3.3.5" rel="stylesheet" />
-
-<!-- Add the base CSS plus Solid + Brands styles-->
-<link href="/assets/fontawesome-free-6.7.2-web/css/fontawesome.css" rel="stylesheet">
-<link href="/assets/fontawesome-free-6.7.2-web/css/brands.css" rel="stylesheet">
-<link href="/assets/fontawesome-free-6.7.2-web/css/solid.css" rel="stylesheet">
-
-<!-- update existing v5 CSS to use v6 icons and assets -->
-<link href="/assets/fontawesome-free-6.4.2-web/css/v5-font-face.css" rel="stylesheet" />
-
-<!-- Your icons showed up and render using FA v6 -->
-
-<script>	
-    $(function(){
-      $("#includedPresentations").load("presentations.html");
-      $("#included").load("funding.html");
-      $("#includedAwardsHonours").load("awards.html");
-      $("#includedTravel").load("travel_grants.html");
-      $("#includedConferencesAttended").load("conferences.html");
-      $("#includedReviewPublications").load("review_publications.html");
-      $("#includedFooter").load("footer.html");
-    });
-    </script>
-  
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration:  none;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: 1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
-
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
-
-<body style="background-color:#ededed;">
-	
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-p {
-  font-size: 1.300em;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
-
-<style type = "text/css">
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 5px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-
-</style>
-
-
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-bottom: 0px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0%;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #c20e0e;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #c92222;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
-
-<!-- tabsets -->
-<!--#ddd-->
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 50px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: red;
-  border: 1px solid #c92222;
-  border-radius: 20px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 20px solid #c92e2e;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 100px;
-  border-right: 1px solid #d61a1a;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 1px;
-  
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Science | Omar Mahadalle</title>
+  <meta name="description" content="Field-site maps and fishing effort analysis for Somalia by marine biologist Omar Mahadalle.">
+  <meta property="og:title" content="Data Science | Omar Mahadalle">
+  <meta property="og:description" content="Field-site maps and fishing effort analysis for Somalia.">
+  <meta property="og:image" content="images/Bari_sites.png">
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+ 
+  <style>
+    :root {
+      --ink: #1f2933;
+      --muted: #5f6b76;
+      --line: #e4e7eb;
+      --accent: #1f5f8b;       /* deep ocean blue */
+      --accent-soft: #e8f0f6;
+      --bg: #ffffff;
+    }
+ 
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Source Sans 3', Arial, sans-serif;
+      font-size: 1.08rem;
+      line-height: 1.7;
+    }
+    h1, h2, h3 { font-family: 'Source Serif 4', Georgia, serif; color: var(--ink); text-wrap: balance; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+ 
+    /* Navbar: same as the homepage */
+    .navbar { background: #fff; border-bottom: 1px solid var(--line); }
+    .navbar-brand { font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; color: var(--ink) !important; }
+    .navbar .nav-link { color: var(--muted); font-weight: 500; }
+    .navbar .nav-link:hover, .navbar .nav-link.active { color: var(--accent); }
+    .dropdown-item:active { background: var(--accent); }
+ 
+    .page { max-width: 860px; }
+ 
+    /* Icons: Font Awesome Free (CC BY 4.0), built into the page as SVG */
+    .ico { width: 1em; height: 1em; display: inline-block; vertical-align: -0.125em; }
+ 
+    /* Page header */
+    .page-head { padding: 3.5rem 0 2rem; }
+    .eyebrow { color: var(--accent); font-weight: 600; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .4rem; }
+    .page-head h1 { font-size: 2.4rem; font-weight: 700; margin-bottom: .75rem; }
+    .lede { font-size: 1.2rem; color: var(--muted); }
+ 
+    .btn-accent { background: var(--accent); color: #fff; border: none; }
+    .btn-accent:hover { background: #174a6d; color: #fff; text-decoration: none; }
+    .btn-outline-accent { border: 1px solid var(--accent); color: var(--accent); }
+    .btn-outline-accent:hover { background: var(--accent-soft); text-decoration: none; }
+ 
+    /* Sections */
+    section { padding: 2rem 0; border-top: 1px solid var(--line); }
+    section h2 { font-size: 1.5rem; margin-bottom: 1.1rem; }
+ 
+ 
+    section p { margin-bottom: .9rem; }
+ 
+    /* Maps */
+    .maps { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; }
+    .maps figure { margin: 0; min-width: 0; }
+    .maps a { display: block; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--accent-soft); }
+    .maps img { width: 100%; height: auto; display: block; }
+    .maps figcaption { font-size: .88rem; color: var(--muted); margin-top: .4rem; }
+ 
+    /* Progress */
+    .status-row { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin: 1rem 0 .4rem; font-size: .95rem; }
+    .status-row strong { color: var(--accent); font-variant-numeric: tabular-nums; }
+    .bar { height: 10px; background: var(--accent-soft); border-radius: 999px; overflow: hidden; }
+    .bar span { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+ 
+    @media (max-width: 576px) {
+      .page-head { padding-top: 2rem; }
+      .page-head h1 { font-size: 2rem; }
+      .maps { grid-template-columns: 1fr; }
+    }
+ 
+    footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; padding: 1.5rem 0; margin-top: 1rem; }
+  </style>
 </head>
-<!-- code folding -->
-
-	
+ 
 <body>
-
-<!-- Navbar -->
-<div class="fluid-row" id="header">
-		 
-<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-primary">		
-<!--<nav class="navbar navbar-fixed-top navbar-expand-lg" style="background-color: #ffffff;">-->
-	<div class="container"> 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+ 
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container page">
+    <a class="navbar-brand" href="index.html">Omar Mahadalle</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>  
-	 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-   	<ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="index.html" class="btn btn-primary btn-lg" type="button" aria-selected="true">
-	<span class="fa fa-home"></span>
-		  Home 
-	  </a>
-        </li>
-        <li class="nav-item">
-        <a class="btn btn-primary btn-lg" type="button" href="aboutme.html" aria-expanded="false">
-	<span class="fa fa-user"></span> 
-		About 
-	</a>
-        </li>
-        
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutme.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#research">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#publications">Publications</a></li>
         <li class="nav-item dropdown">
-         <a class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" href="#" aria-expanded="false" > 
-         <i class="fab fa-blogger-b"></i> Blog
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="data_science.html">Data science</a></li>
-            <li><a class="dropdown-item" href="#">Somali fisheries</a></li>
-            <li><a class="dropdown-item" href="#">Elasmobranch research</a></li>
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item active" aria-current="page" href="data_science.html">Data science</a></li>
+            <li><a class="dropdown-item" href="somalifisheries.html">Somali fisheries</a></li>
+            <li><a class="dropdown-item" href="elasmobranchresearch.html">Sharks and rays of Somalia</a></li>
           </ul>
         </li>
-	<li class="nav-item dropdown">
-          <a class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" href="#"  aria-expanded="false">
-           <i class="fas fa-users"></i> 
-		  Sci Commun
-        </a>
-          <ul class="dropdown-menu">
-            	<li><a class="dropdown-item" href="#">Photography</a></li>
-            	<li><a class="dropdown-item" href="#">Sketch drawing</a></li>
-		<li><a class="dropdown-item" href="#">Virtual museum of natural history</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Outreach</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="photography.html">Photography</a></li>
+            <li><a class="dropdown-item" href="sketchdrawing.html">Sketch drawing</a></li>
+            <li><a class="dropdown-item" href="virtualmuseum.html">Virtual museum of natural history</a></li>
           </ul>
         </li>
-		<li class="nav-item">
-          <a class="btn btn-primary btn-lg" href="resources.html" aria-expanded="false">
-		<span class="fas fa-bookmark"></span>
-			Resources
-		</a>
-	</li>
-		<li class="nav-item">
-         <a class="btn btn-primary btn-lg" href="contactinfo.html" aria-expanded="false">
-		<span class="fa fa-address-book"></span>
-			 Contact
-		</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactinfo.html">Contact</a></li>
       </ul>
-	</div>
-		
-    </div><!--/.container -->
-	</nav>
-  </div><!--/.navbar -->
-  
-	
-<div class="fluid-row" id="header">
-	
-	<div class="container">
-	<h5><strong>Map based interface</strong></h5>
-	<p>Site maps to plan field activities</p>
-		
-      <div class="row">
-	      
-        <div class="col">
-        <img src="images/All sites.png"class="img-thumbnail" alt="National Museum">
-        </div>
-        <div class="col">
-        <img src="images/Bari_sites.png"class="img-thumbnail" alt="National Museum">
-        </div>
-        
-      </div>
-	
-	
-<hr class="featurette-divider">	 		
-		
-	<h5><strong>Fishing Effort</strong></h5>
-	<p>Preliminary analysis</p>
-		
-<div class="progress" style="height: 10px;">
-  <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">65%</div>
-</div>
-	<!--code <p>Here I will share my learning journey in data science</p>-->
-	
-	<!--Somalia map-->
-	<!--<div class="map embed-container">-->
-    <!--<div id="map-notice" style="display: block;"> </div>-->
-    <!--<div class="map-overlay" style="display: block;"></div>-->
-    <!--<iframe style="width:100%" src="https://rpubs.com/omahadalle/bariregion" width="100%" height="461" frameborder="0"></iframe>-->
-	<!--</div>
-	<!--<iframe style="width: 100%; height: 500px;" -->
-	<!--src="https://rpubs.com/omahadalle/bariregion">-->
-	     
-	<!--</iframe>-->
-	
-     
-  </div>    
-
-       
- <!-- Google Analytics -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-XXXXX-Y', 'auto');
-ga('send', 'pageview');
-</script>
-<!-- End Google Analytics --> 
-  
-  
-<script>
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
-
-
-</script>
-
-<!-- tabsets -->
-<script>
-var onMapMouseleaveHandler = function(event) {
-    $('#map-notice').fadeIn(500);
-    var elemento = $$(this);
-    elemento.on('click', onMapClickHandler);
-    elemento.off('mouseleave', onMapMouseleaveHandler);
-    $('.map-overlay').fadeIn(500);
-}
-var onMapClickHandler = function(event) {
-    $('#map-notice').fadeOut(500);
-    var elemento = $$(this);
-    elemento.off('click', onMapClickHandler);
-    $('.map-overlay').fadeOut(500);
-    elemento.on('mouseleave', onMapMouseleaveHandler);
-}
-$('.map.embed-container').on('click', onMapClickHandler);
-</script>
-	
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
+    </div>
+  </div>
+</nav>
+<main class="container page">
+ 
+  <div class="page-head">
+    <div class="eyebrow">Blog · Data science</div>
+    <h1>Data science</h1>
+    <p class="lede">
+      Maps and analyses I build to plan fieldwork and understand fishing in Somalia's coastal waters.
+    </p>
+  </div>
+ 
+  <!-- Maps -->
+  <section id="maps">
+    <h2>Field-site maps</h2>
+    <p>
+      I use map-based tools to plan field activities and keep track of sampling locations.
+      Tap a map to open it full size.
+    </p>
+    <!-- TODO: check the captions, and rename "All sites.png" to a name without spaces, such as all-sites.png -->
+    <div class="maps">
+      <figure>
+        <a href="images/All%20sites.png" target="_blank" rel="noopener">
+          <img src="images/All%20sites.png" alt="Map of all field sites" loading="lazy">
+        </a>
+        <figcaption>All field sites</figcaption>
+      </figure>
+      <figure>
+        <a href="images/Bari_sites.png" target="_blank" rel="noopener">
+          <img src="images/Bari_sites.png" alt="Map of field sites in the Bari region, Somalia" loading="lazy">
+        </a>
+        <figcaption>Field sites in the Bari region</figcaption>
+      </figure>
+    </div>
+    <p class="mt-3 mb-0">
+      You can also explore the
+      <a href="https://rpubs.com/omahadalle/bariregion" target="_blank" rel="noopener">interactive Bari region map on RPubs</a>.
+    </p>
+  </section>
+ 
+  <!-- Fishing effort -->
+  <section id="fishing-effort">
+    <h2>Fishing effort</h2>
+    <p>
+      A preliminary analysis of fishing effort in Somali waters. Results will be posted here when the analysis
+      is complete.
+    </p>
+    <div class="status-row"><span>Analysis progress</span><strong>65%</strong></div>
+    <div class="bar" role="progressbar" aria-label="Fishing effort analysis progress" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span style="width: 65%"></span></div>
+  </section>
+ 
+</main>
+ 
+<footer>
+  <div class="container page d-flex flex-wrap justify-content-between gap-2">
+    <span>&copy; 2026 Omar Mahadalle</span>
+    <span>Last updated October 2026</span>
+  </div>
+</footer>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
+ 
