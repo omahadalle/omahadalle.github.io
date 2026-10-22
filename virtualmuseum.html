@@ -1,453 +1,425 @@
 <!DOCTYPE html>
-<html class="chapters">
-
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="generator" content="website"/>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virtual Museum | Omar Mahadalle</title>
+  <meta name="description" content="A virtual museum of Somali natural history and the community-driven Somalia Biodiversity Project, led by marine biologist Omar Mahadalle.">
+  <meta property="og:title" content="Virtual Museum of Natural History">
+  <meta property="og:description" content="Exhibits of Somali natural history and community biodiversity records.">
+  <meta property="og:image" content="images/Rhynchobatus%20djiddensis%202023-12-13%2003.34.39.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;500;600&family=Source+Serif+4:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #1f2933;
+      --muted: #5f6b76;
+      --line: #e4e7eb;
+      --accent: #1f5f8b;       /* deep ocean blue */
+      --accent-soft: #e8f0f6;
+      --bg: #ffffff;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Source Sans 3', Arial, sans-serif;
+      font-size: 1.08rem;
+      line-height: 1.7;
+    }
+    h1, h2, h3 { font-family: 'Source Serif 4', Georgia, serif; color: var(--ink); text-wrap: balance; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Navbar: same as the homepage */
+    .navbar { background: #fff; border-bottom: 1px solid var(--line); }
+    .navbar-brand { font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; color: var(--ink) !important; }
+    .navbar .nav-link { color: var(--muted); font-weight: 500; }
+    .navbar .nav-link:hover, .navbar .nav-link.active { color: var(--accent); }
+    .dropdown-item:active { background: var(--accent); }
+
+    .page { max-width: 860px; }
+
+    /* Icons: Font Awesome Free (CC BY 4.0), built into the page as SVG */
+    .ico { width: 1em; height: 1em; display: inline-block; vertical-align: -0.125em; }
+
+    /* Page header */
+    .page-head { padding: 3.5rem 0 2rem; }
+    .eyebrow { color: var(--accent); font-weight: 600; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .4rem; }
+    .page-head h1 { font-size: 2.4rem; font-weight: 700; margin-bottom: .75rem; }
+    .lede { font-size: 1.2rem; color: var(--muted); }
+
+    .btn-accent { background: var(--accent); color: #fff; border: none; }
+    .btn-accent:hover { background: #174a6d; color: #fff; text-decoration: none; }
+    .btn-outline-accent { border: 1px solid var(--accent); color: var(--accent); }
+    .btn-outline-accent:hover { background: var(--accent-soft); text-decoration: none; }
+
+    /* Sections */
+    section { padding: 2rem 0; border-top: 1px solid var(--line); }
+    section h2 { font-size: 1.5rem; margin-bottom: 1.1rem; }
 
 
-<title>Omar Mahadalle</title>
+    section p { margin-bottom: .9rem; }
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script> 
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">	
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-	<!-- code folding -->
-	
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+    section p { margin-bottom: .9rem; }
+    .page-wide { max-width: 1100px; }
+    :root { --paper: #fbf8f1; --paper-line: #e6dfcf; --mono: 'IBM Plex Mono', 'Courier New', monospace; }
 
-	
-<script src="resources/js/ie-emulation-modes-warning.js"></script>
-<script src="resources/js/jquery.min.js"></script> 	
+    /* Hall filters */
+    .halls { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
+    .chip { border: 1px solid var(--line); background: #fff; color: var(--ink); font-size: .92rem; font-weight: 500; padding: .35rem .9rem; border-radius: 999px; }
+    .chip .n { color: var(--muted); font-size: .82rem; margin-left: .2rem; font-variant-numeric: tabular-nums; }
+    .chip:hover { border-color: var(--accent); color: var(--accent); }
+    .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .chip[aria-pressed="true"] .n { color: #d6e4ef; }
+    .chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-<!-- FA that can't be removed -->
-<link href="/site_libs/bootstrap-3.3.5" rel="stylesheet" />
+    /* Exhibit cases */
+    .cases { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.25rem; }
+    .case { border: 0; padding: 0; background: none; text-align: left; color: inherit; display: flex; flex-direction: column; min-width: 0; cursor: pointer; }
+    .case:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+    .vitrine { aspect-ratio: 4 / 3; border-radius: 6px 6px 0 0; overflow: hidden; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 35%, #2a4c6b 0%, #142a40 75%); }
+    .vitrine img { width: 100%; height: 100%; object-fit: contain; padding: .75rem; transition: transform .35s ease; }
+    .case:hover .vitrine img { transform: scale(1.04); }
+    .vitrine .empty { color: #a9bccd; font-family: var(--mono); font-size: .78rem; text-align: center; padding: 1rem; }
 
-<!-- Add the base CSS plus Solid + Brands styles-->
-<link href="/assets/fontawesome-free-6.7.2-web/css/fontawesome.css" rel="stylesheet">
-<link href="/assets/fontawesome-free-6.7.2-web/css/brands.css" rel="stylesheet">
-<link href="/assets/fontawesome-free-6.7.2-web/css/solid.css" rel="stylesheet">
+    /* Specimen label */
+    .label { background: var(--paper); border: 1px solid var(--paper-line); border-top: 0; border-radius: 0 0 6px 6px; padding: .8rem .9rem .9rem; flex: 1; }
+    .label .cat { font-family: var(--mono); font-size: .74rem; color: #7a6f58; letter-spacing: .04em; display: flex; justify-content: space-between; gap: .5rem; }
+    .label .sci { font-family: 'Source Serif 4', Georgia, serif; font-style: italic; font-size: 1.12rem; font-weight: 600; margin-top: .25rem; line-height: 1.25; }
+    .label .common { color: var(--muted); font-size: .93rem; }
+    .label .meta { font-family: var(--mono); font-size: .76rem; color: #6b6352; margin-top: .45rem; line-height: 1.5; }
+    .example { font-family: var(--mono); font-size: .68rem; text-transform: uppercase; letter-spacing: .06em; color: #9a6b2f; }
 
-<!-- update existing v5 CSS to use v6 icons and assets -->
-<link href="/assets/fontawesome-free-6.4.2-web/css/v5-font-face.css" rel="stylesheet" />
+    /* Exhibit viewer */
+    .viewer { position: fixed; inset: 0; z-index: 2000; background: rgba(6,16,26,.88); display: flex; align-items: center; justify-content: center;
+      padding: max(16px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+    .viewer[hidden] { display: none; }
+    .viewer-card { background: #fff; border-radius: 8px; width: min(920px, 100%); max-height: 100%; overflow: auto; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
+    .viewer-card .vitrine { aspect-ratio: auto; min-height: 320px; border-radius: 8px 0 0 8px; }
+    .viewer-card .vitrine img { padding: 1.25rem; }
+    .viewer-body { padding: 1.4rem 1.5rem; position: relative; }
+    .viewer-body .sci { font-family: 'Source Serif 4', Georgia, serif; font-style: italic; font-size: 1.5rem; font-weight: 600; line-height: 1.2; margin: .3rem 2rem .1rem 0; }
+    .viewer-body dl { display: grid; grid-template-columns: auto 1fr; gap: .35rem 1rem; margin: 1rem 0; font-size: .95rem; }
+    .viewer-body dt { font-family: var(--mono); font-size: .74rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); padding-top: .2rem; }
+    .viewer-body dd { margin: 0; }
+    .viewer-close { position: absolute; top: .8rem; right: .8rem; border: 1px solid var(--line); background: #fff; width: 2.25rem; height: 2.25rem; border-radius: 50%; font-size: 1rem; }
+    .viewer-close:focus-visible { outline: 2px solid var(--accent); }
+    .viewer-nav { display: flex; gap: .5rem; }
+    body.viewer-open { overflow: hidden; }
 
-<!-- Your icons showed up and render using FA v6 -->
+    /* Divider between museum and project */
+    .divider { border: 0; height: 1px; background: var(--line); margin: 2.5rem 0 0; opacity: 1; }
 
-<script>	
-    $(function(){
-      $("#includedPresentations").load("presentations.html");
-      $("#included").load("funding.html");
-      $("#includedAwardsHonours").load("awards.html");
-      $("#includedTravel").load("travel_grants.html");
-      $("#includedConferencesAttended").load("conferences.html");
-      $("#includedReviewPublications").load("review_publications.html");
-      $("#includedFooter").load("footer.html");
-    });
-    </script>
-  
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration:  none;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: 1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
+    /* Biodiversity project */
+    .project-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 1rem; }
+    .inat-box { border: 1px solid var(--line); border-radius: 6px; padding: 1rem; margin-top: 1rem; overflow-x: auto; }
+    .inat-box .inat-widget { font-family: 'Source Sans 3', Arial, sans-serif; line-height: 1.35; }
+    .inat-box .inat-widget-header { margin-bottom: .75rem; }
+    .inat-box .inat-widget td { vertical-align: top; padding-bottom: .75rem; }
+    .inat-box .inat-label { color: var(--muted); }
+    .inat-box .inat-meta { font-size: .85rem; margin-top: 3px; line-height: 1.3; color: var(--muted); }
+    .inat-box .inat-observation-body, .inat-box .inat-user-body { padding-left: .75rem; }
+    .inat-box .inat-observation-image { width: 64px; display: inline-block; text-align: center; }
+    .inat-box .inat-observation-image img { max-width: 64px; border-radius: 4px; vertical-align: middle; }
+    .inat-box .inat-user-image img { width: 40px; height: 40px; border-radius: 50%; }
+    .inat-box .inat-footer td.inat-value { vertical-align: middle; padding-left: .75rem; }
 
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
+    .contribute { background: var(--accent-soft); border-radius: 6px; padding: 1rem 1.2rem; margin: 1.25rem 0 1.5rem; }
+    .contribute ol { margin: .5rem 0 .9rem; padding-left: 1.2rem; }
+    .contribute li { margin-bottom: .2rem; }
+    .feed-tabs { display: flex; gap: .4rem; border-bottom: 1px solid var(--line); }
+    .feed-tabs button { border: 0; background: none; padding: .55rem .9rem; font-weight: 600; color: var(--muted); border-bottom: 2px solid transparent; margin-bottom: -1px; }
+    .feed-tabs button[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
+    .feed-tabs button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .feed-tabs + .inat-box, .feed-tabs ~ .inat-box { margin-top: 0; border-top: 0; border-radius: 0 0 6px 6px; }
+    .feed-foot { margin: .5rem 0 0; font-size: .92rem; }
+    .chart-note { font-size: .85rem; color: var(--muted); margin-top: .75rem; }
 
-<body style="background-color:#ededed;">
-	
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-p {
-  font-size: 1.300em;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+    @media (max-width: 760px) {
+      .viewer-card { grid-template-columns: 1fr; }
+      .viewer-card .vitrine { min-height: 220px; border-radius: 8px 8px 0 0; }
+    }
+    @media (max-width: 576px) {
+      .page-head { padding-top: 2rem; }
+      .page-head h1 { font-size: 2rem; }
+      .cases { grid-template-columns: 1fr 1fr; gap: .75rem; }
+      .label { padding: .6rem .65rem .7rem; }
+      .label .sci { font-size: .98rem; }
+      .label .meta { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) { .vitrine img { transition: none; } }
 
-<style type = "text/css">
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 5px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-
-</style>
-
-
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-bottom: 0px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0%;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #c20e0e;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #c92222;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
-
-<!-- tabsets -->
-<!--#ddd-->
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 50px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: red;
-  border: 1px solid #c92222;
-  border-radius: 20px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 20px solid #c92e2e;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 100px;
-  border-right: 1px solid #d61a1a;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 1px;
-  
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
-
+    footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; padding: 1.5rem 0; margin-top: 1rem; }
+  </style>
 </head>
-<!-- code folding -->
 
-	
 <body>
 
-<!-- Navbar -->
-<div class="fluid-row" id="header">
-		 
-<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-primary">		
-<!--<nav class="navbar navbar-fixed-top navbar-expand-lg" style="background-color: #ffffff;">-->
-	<div class="container"> 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container page">
+    <a class="navbar-brand" href="index.html">Omar Mahadalle</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>  
-	 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-   	<ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="index.html" class="btn btn-primary btn-lg" type="button" aria-selected="true">
-	<span class="fa fa-home"></span>
-		  Home 
-	  </a>
-        </li>
-        <li class="nav-item">
-        <a class="btn btn-primary btn-lg" type="button" href="aboutme.html" aria-expanded="false">
-	<span class="fa fa-user"></span> 
-		About 
-	</a>
-        </li>
-        
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutme.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#research">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#publications">Publications</a></li>
         <li class="nav-item dropdown">
-         <a class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" href="#" aria-expanded="false" > 
-         <i class="fab fa-blogger-b"></i> Blog
-          </a>
-          <ul class="dropdown-menu">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+          <ul class="dropdown-menu dropdown-menu-end">
             <li><a class="dropdown-item" href="data_science.html">Data science</a></li>
-            <li><a class="dropdown-item" href="#">Somali fisheries</a></li>
-            <li><a class="dropdown-item" href="elasmobranchresearch.html">Elasmobranch research</a></li>
+            <li><a class="dropdown-item" href="somalifisheries.html">Somali fisheries</a></li>
+            <li><a class="dropdown-item" href="elasmobranchresearch.html">Sharks and rays of Somalia</a></li>
           </ul>
         </li>
-	<li class="nav-item dropdown">
-          <a class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" href="#"  aria-expanded="false">
-           <i class="fas fa-users"></i> 
-		  Sci Commun
-        </a>
-          <ul class="dropdown-menu">
-            	<li><a class="dropdown-item" href="photography.html">Photography</a></li>
-            	<li><a class="dropdown-item" href="sketchdrawing.html">Sketch drawing</a></li>
-		<li><a class="dropdown-item" href="virtualmuseum.html">Virtual museum of natural history</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Outreach</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="photography.html">Photography</a></li>
+            <li><a class="dropdown-item" href="sketchdrawing.html">Sketch drawing</a></li>
+            <li><a class="dropdown-item active" aria-current="page" href="virtualmuseum.html">Virtual museum of natural history</a></li>
           </ul>
         </li>
-		<li class="nav-item">
-          <a class="btn btn-primary btn-lg" href="resources.html" aria-expanded="false">
-		<span class="fas fa-bookmark"></span>
-			Resources
-		</a>
-	</li>
-		<li class="nav-item">
-         <a class="btn btn-primary btn-lg" href="contactinfo.html" aria-expanded="false">
-		<span class="fa fa-address-book"></span>
-			 Contact
-		</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactinfo.html">Contact</a></li>
       </ul>
-	</div>
-		
-    </div><!--/.container -->
-	</nav>
-  </div><!--/.navbar -->
-
-	<div class="container about">
-	<div style= "background-color:#ffffff;font-family:Arial; color:#000000;width: 100%px; border-radius: 10px; border: 1px solid #BCBCBC; padding: 15px; margin-bottom: 30px;">	
-<h5><strong>Somalia Biodiversity Project</strong></h5>
-<p>Driven by curiosity about natural history</p>
-
-<style type="text/css" media="screen">
-.inat-widget { font-family: Georgia, serif; padding: 10px; line-height: 1;}
-.inat-widget-header {margin-bottom: 10px;}
-.inat-widget td {vertical-align: top; padding-bottom: 10px;}
-.inat-label { color: #888; }
-.inat-meta { font-size: smaller; margin-top: 3px; line-height: 1.2;}
-.inat-observation-body, .inat-user-body { padding-left: 10px; }
-.inat-observation-image {text-align: center;}
-.inat-observation-image, .inat-user-image { width: 48px; display: inline-block; }
-.inat-observation-image img, .inat-user-image img { max-width: 48px; }
-.inat-observation-image img { vertical-align: middle; }
-.inat-widget-small .inat-observation-image { display:block; float: left; margin: 0 3px 3px 0; height:48px;}
-.inat-label, .inat-value, .inat-user { font-family: "Trebuchet MS", Arial, sans-serif; }
-.inat-user-body {vertical-align: middle;}
-.inat-widget td.inat-user-body {vertical-align: middle;}
-.inat-widget .inat-footer td.inat-value {vertical-align: middle; padding-left: 10px; border: 10px;}
-</style>
-	
-<div class="inat-widget">
-    <div class="inat-widget-header">
-      <a href="https://www.inaturalist.org"><img alt="iNaturalist" src="https://www.inaturalist.org/assets/logo-small.png" /></a>  
     </div>
-  <script type="text/javascript" charset="utf-8" src="https://www.inaturalist.org/observations/omahadalle.widget?layout=large&limit=15&order=asc&order_by=observed_on"></script>
-  <table class="inat-footer">
-    <tr class="inat-user">
-        <td class="inat-user-image">
-          <a border="0" href="https://www.inaturalist.org/observations/omahadalle"><img class="usericon" src="https://static.inaturalist.org/attachments/users/icons/6059937/thumb.jpg?1661850010" class="rounded-circle" /></a>
-        </td>
-      <td class="inat-value">
-        <strong>
-            <a href="https://www.inaturalist.org/observations/omahadalle">View my observations »</a>
-        </strong>
-      </td>
-    </tr>
-  </table>
+  </div>
+</nav>
+<main class="container page page-wide">
+
+  <div class="page-head">
+    <div class="eyebrow">Outreach · Virtual museum</div>
+    <h1>Virtual Museum of Natural History</h1>
+    <p class="lede">
+      This virtual museum grew out of my lifelong interest in natural history. It is a digital collection of
+      Somalia's plants and animals. Choose a hall, then open any exhibit to read its specimen label.
+    </p>
+  </div>
+
+  <!-- ===== Museum ===== -->
+  <section id="museum" style="border-top: 0; padding-top: 0;">
+    <div class="halls" id="halls" role="group" aria-label="Filter exhibits by hall"></div>
+    <div class="cases" id="cases"></div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ===== Biodiversity project ===== -->
+  <section id="biodiversity" style="border-top: 0;">
+    <div class="eyebrow">Citizen science</div>
+    <h2 class="mb-2">Somalia Biodiversity Project</h2>
+    <p>
+      A community effort to document the plants and animals of Somalia. Anyone can contribute: researchers,
+      students, fishers and nature lovers record what they see on iNaturalist, and each observation adds to the
+      open record of Somalia's biodiversity. Driven by curiosity about natural history, the project grows with
+      every contributor.
+    </p>
+
+    <div class="contribute">
+      <strong>How to contribute</strong>
+      <ol>
+        <li>Create a free account on <a href="https://www.inaturalist.org" target="_blank" rel="noopener">iNaturalist</a>.</li>
+        <li>Photograph plants and animals you find in Somalia and upload them as observations.</li>
+        <li>Join the project so your records are counted here.</li>
+      </ol>
+      <!-- TODO: replace PROJECT_URL with your iNaturalist project link -->
+      <a class="btn btn-accent btn-sm" href="PROJECT_URL" target="_blank" rel="noopener">Join the project on iNaturalist</a>
+    </div>
+
+    <div class="feed-tabs" role="tablist" aria-label="Choose whose records to show">
+      <button type="button" role="tab" id="tab-all" aria-controls="panel-all" aria-selected="true">All contributors</button>
+      <button type="button" role="tab" id="tab-mine" aria-controls="panel-mine" aria-selected="false" tabindex="-1">My records</button>
+    </div>
+
+    <div class="inat-box" id="panel-all" role="tabpanel" aria-labelledby="tab-all">
+      <div class="inat-widget">
+        <!-- TODO: replace PROJECT_SLUG with your project's short name from its iNaturalist link,
+             e.g. inaturalist.org/projects/somalia-biodiversity-project -> somalia-biodiversity-project -->
+        <script type="text/javascript" charset="utf-8" src="https://www.inaturalist.org/observations/project/PROJECT_SLUG.widget?layout=large&limit=15&order=desc&order_by=observed_on"></script>
+        <noscript><p><a href="PROJECT_URL">See all project observations on iNaturalist</a></p></noscript>
+      </div>
+      <p class="feed-foot"><a href="PROJECT_URL" target="_blank" rel="noopener">See all contributors' observations on iNaturalist</a></p>
+    </div>
+
+    <div class="inat-box" id="panel-mine" role="tabpanel" aria-labelledby="tab-mine" hidden>
+      <div class="inat-widget">
+        <script type="text/javascript" charset="utf-8" src="https://www.inaturalist.org/observations/omahadalle.widget?layout=large&limit=15&order=desc&order_by=observed_on"></script>
+        <noscript><p><a href="https://www.inaturalist.org/observations/omahadalle">See my observations on iNaturalist</a></p></noscript>
+      </div>
+      <p class="feed-foot"><a href="https://www.inaturalist.org/observations/omahadalle" target="_blank" rel="noopener">See all my observations on iNaturalist</a></p>
+    </div>
+    <p class="chart-note">Showing the 15 most recent records. Records belong to the people who made them and are shared through iNaturalist.</p>
+  </section>
+
+</main>
+
+<!-- Exhibit viewer -->
+<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-labelledby="v-sci" hidden>
+  <div class="viewer-card">
+    <div class="vitrine" id="v-vitrine"></div>
+    <div class="viewer-body">
+      <button class="viewer-close" type="button" id="v-close" aria-label="Close">&#x2715;</button>
+      <div class="label" style="background:none;border:0;padding:0"><div class="cat" id="v-cat"></div></div>
+      <div class="sci" id="v-sci"></div>
+      <div class="text-muted" id="v-common"></div>
+      <dl id="v-dl"></dl>
+      <p id="v-note" class="mb-3"></p>
+      <div class="viewer-nav">
+        <button class="btn btn-outline-accent btn-sm" type="button" id="v-prev">&#x2039; Previous</button>
+        <button class="btn btn-outline-accent btn-sm" type="button" id="v-next">Next &#x203A;</button>
+      </div>
+    </div>
+  </div>
 </div>
 
-	
-</div>
-</div>
+<footer>
+  <div class="container page page-wide d-flex flex-wrap justify-content-between gap-2">
+    <span>&copy; 2026 Omar Mahadalle. Illustrations credited on each exhibit.</span>
+    <span>Last updated October 2026</span>
+  </div>
+</footer>
 
-
-
-
-
-	<script>
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
-
-
-</script>
-
-<!-- tabsets -->
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
+  /* ============================================================
+     YOUR EXHIBITS: edit this list.
+     - hall: must match one of the HALLS below
+     - img: image path (leave '' if you have no image yet)
+     - example: true marks a placeholder; delete that line when the exhibit is real
+     ============================================================ */
+  var HALLS = ['Sharks and rays', 'Bony fishes', 'Invertebrates', 'Birds', 'Plants'];
+  var EXHIBITS = [
+    { id: 'VM-0001', hall: 'Sharks and rays', sci: 'Rhynchobatus djiddensis', common: 'Giant guitarfish',
+      img: 'images/Rhynchobatus%20djiddensis%202023-12-13%2003.34.39.png', kind: 'Illustration', credit: 'Abdishakur Farah',
+      locality: 'Somalia', date: '2023', note: 'Add a short note about this species and why it matters in Somali waters.' },
+    { id: 'VM-0002', hall: 'Bony fishes', sci: 'L. fulvus', common: '',
+      img: 'images/L.%20fulvus.png', kind: 'Sketch', credit: 'Omar Mahadalle',
+      locality: '', date: '', note: 'Add the full species name, where you saw it, and a short note.' },
+    { id: 'VM-0003', hall: 'Sharks and rays', sci: 'Centrophorus atromarginatus', common: 'Dwarf gulper shark',
+      img: '', kind: 'Photograph', credit: 'Omar Mahadalle', locality: 'Somalia', date: '',
+      note: 'The focus of my Shark Conservation Fund project. Add a photo from your fieldwork.', example: true },
+    { id: 'VM-0004', hall: 'Invertebrates', sci: 'Species name', common: 'Common name', img: '', kind: 'Photograph',
+      credit: '', locality: '', date: '', note: 'Example exhibit. Replace with your own specimen or photo.', example: true },
+    { id: 'VM-0005', hall: 'Birds', sci: 'Species name', common: 'Common name', img: '', kind: 'Photograph',
+      credit: '', locality: '', date: '', note: 'Example exhibit. Replace with your own specimen or photo.', example: true },
+    { id: 'VM-0006', hall: 'Plants', sci: 'Species name', common: 'Common name', img: '', kind: 'Photograph',
+      credit: '', locality: '', date: '', note: 'Example exhibit. Replace with your own specimen or photo.', example: true }
+  ];
 
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+  var active = 'All', hallsEl = document.getElementById('halls'), casesEl = document.getElementById('cases');
+  function visible() { return active === 'All' ? EXHIBITS : EXHIBITS.filter(function (e) { return e.hall === active; }); }
+  function el(tag, cls, text) { var x = document.createElement(tag); if (cls) x.className = cls; if (text != null) x.textContent = text; return x; }
+  function vitrine(e, target) {
+    target.innerHTML = '';
+    if (e.img) {
+      var img = el('img'); img.alt = e.kind + ' of ' + e.sci + (e.common ? ' (' + e.common + ')' : '');
+      img.loading = 'lazy';
+      img.onerror = function () { target.innerHTML = ''; target.appendChild(el('div', 'empty', 'Image file not found')); };
+      img.src = e.img; target.appendChild(img);
+    } else {
+      target.appendChild(el('div', 'empty', 'Image coming soon'));
+    }
+  }
+
+  function renderHalls() {
+    hallsEl.innerHTML = '';
+    ['All'].concat(HALLS).forEach(function (h) {
+      var n = h === 'All' ? EXHIBITS.length : EXHIBITS.filter(function (e) { return e.hall === h; }).length;
+      if (!n) return;
+      var b = el('button', 'chip'); b.type = 'button';
+      b.setAttribute('aria-pressed', String(h === active));
+      b.textContent = h === 'All' ? 'All halls' : h;
+      b.appendChild(el('span', 'n', String(n)));
+      b.onclick = function () { active = h; renderHalls(); renderCases(); };
+      hallsEl.appendChild(b);
+    });
+  }
+
+  function renderCases() {
+    casesEl.innerHTML = '';
+    visible().forEach(function (e, i) {
+      var b = el('button', 'case'); b.type = 'button';
+      b.setAttribute('aria-label', 'Open exhibit: ' + e.sci + (e.common ? ', ' + e.common : ''));
+      var v = el('div', 'vitrine'); vitrine(e, v); b.appendChild(v);
+      var lab = el('div', 'label');
+      var cat = el('div', 'cat'); cat.appendChild(el('span', null, e.id)); cat.appendChild(el('span', null, e.hall)); lab.appendChild(cat);
+      lab.appendChild(el('div', 'sci', e.sci));
+      if (e.common) lab.appendChild(el('div', 'common', e.common));
+      var meta = [e.kind, e.locality, e.date].filter(Boolean).join(' · ');
+      if (meta) lab.appendChild(el('div', 'meta', meta));
+      if (e.example) lab.appendChild(el('div', 'example', 'Example exhibit'));
+      b.appendChild(lab);
+      b.onclick = function () { openViewer(i, b); };
+      casesEl.appendChild(b);
+    });
+  }
+
+  /* ---------- Viewer ---------- */
+  var viewer = document.getElementById('viewer'), cur = 0, opener = null;
+  function show(i) {
+    var list = visible(); cur = (i + list.length) % list.length; var e = list[cur];
+    vitrine(e, document.getElementById('v-vitrine'));
+    document.getElementById('v-cat').textContent = e.id + ' · ' + e.hall + (e.example ? ' · Example' : '');
+    document.getElementById('v-sci').textContent = e.sci;
+    document.getElementById('v-common').textContent = e.common || '';
+    var dl = document.getElementById('v-dl'); dl.innerHTML = '';
+    [['Type', e.kind], ['Locality', e.locality], ['Date', e.date], ['Credit', e.credit]].forEach(function (r) {
+      if (!r[1]) return; dl.appendChild(el('dt', null, r[0])); dl.appendChild(el('dd', null, r[1]));
+    });
+    document.getElementById('v-note').textContent = e.note || '';
+    var single = list.length < 2;
+    document.getElementById('v-prev').hidden = single; document.getElementById('v-next').hidden = single;
+  }
+  function openViewer(i, from) { opener = from; show(i); viewer.hidden = false; document.body.classList.add('viewer-open'); document.getElementById('v-close').focus(); }
+  function closeViewer() { viewer.hidden = true; document.body.classList.remove('viewer-open'); if (opener) opener.focus(); }
+  document.getElementById('v-close').onclick = closeViewer;
+  document.getElementById('v-prev').onclick = function () { show(cur - 1); };
+  document.getElementById('v-next').onclick = function () { show(cur + 1); };
+  viewer.addEventListener('click', function (ev) { if (ev.target === viewer) closeViewer(); });
+  document.addEventListener('keydown', function (ev) {
+    if (viewer.hidden) return;
+    if (ev.key === 'Escape') closeViewer();
+    else if (ev.key === 'ArrowRight') show(cur + 1);
+    else if (ev.key === 'ArrowLeft') show(cur - 1);
+    else if (ev.key === 'Tab') {
+      var f = [].slice.call(viewer.querySelectorAll('button')).filter(function (x) { return !x.hidden; });
+      if (ev.shiftKey && document.activeElement === f[0]) { ev.preventDefault(); f[f.length - 1].focus(); }
+      else if (!ev.shiftKey && document.activeElement === f[f.length - 1]) { ev.preventDefault(); f[0].focus(); }
+    }
   });
-});
-</script>
 
-<!-- code folding -->
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
+  /* ---------- Feed tabs ---------- */
   (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
+    var tabs = [document.getElementById('tab-all'), document.getElementById('tab-mine')];
+    function select(t, focus) {
+      tabs.forEach(function (x) {
+        var on = x === t;
+        x.setAttribute('aria-selected', String(on)); x.tabIndex = on ? 0 : -1;
+        document.getElementById(x.getAttribute('aria-controls')).hidden = !on;
+      });
+      if (focus) t.focus();
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { select(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); select(tabs[(i + 1) % 2], true); }
+      });
+    });
   })();
-</script>
 
+  renderHalls(); renderCases();
+</script>
 </body>
 </html>
