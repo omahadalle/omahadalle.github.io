@@ -1,555 +1,347 @@
 <!DOCTYPE html>
-<html class="chapters">
-
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="generator" content="website"/>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photography | Omar Mahadalle</title>
+  <meta name="description" content="Photography from the Philippines and Somalia by marine biologist Omar Mahadalle.">
+  <meta property="og:title" content="Photography | Omar Mahadalle">
+  <meta property="og:description" content="Photography from the Philippines and Somalia.">
+  <meta property="og:image" content="images/IMG_8784_3.JPG">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #1f2933;
+      --muted: #5f6b76;
+      --line: #e4e7eb;
+      --accent: #1f5f8b;       /* deep ocean blue */
+      --accent-soft: #e8f0f6;
+      --bg: #ffffff;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Source Sans 3', Arial, sans-serif;
+      font-size: 1.08rem;
+      line-height: 1.7;
+    }
+    h1, h2, h3 { font-family: 'Source Serif 4', Georgia, serif; color: var(--ink); text-wrap: balance; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Navbar: same as the homepage */
+    .navbar { background: #fff; border-bottom: 1px solid var(--line); }
+    .navbar-brand { font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; color: var(--ink) !important; }
+    .navbar .nav-link { color: var(--muted); font-weight: 500; }
+    .navbar .nav-link:hover, .navbar .nav-link.active { color: var(--accent); }
+    .dropdown-item:active { background: var(--accent); }
+
+    .page { max-width: 860px; }
+
+    /* Icons: Font Awesome Free (CC BY 4.0), built into the page as SVG */
+    .ico { width: 1em; height: 1em; display: inline-block; vertical-align: -0.125em; }
+
+    /* Page header */
+    .page-head { padding: 3.5rem 0 2rem; }
+    .eyebrow { color: var(--accent); font-weight: 600; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .4rem; }
+    .page-head h1 { font-size: 2.4rem; font-weight: 700; margin-bottom: .75rem; }
+    .lede { font-size: 1.2rem; color: var(--muted); }
+
+    .btn-accent { background: var(--accent); color: #fff; border: none; }
+    .btn-accent:hover { background: #174a6d; color: #fff; text-decoration: none; }
+    .btn-outline-accent { border: 1px solid var(--accent); color: var(--accent); }
+    .btn-outline-accent:hover { background: var(--accent-soft); text-decoration: none; }
+
+    /* Sections */
+    section { padding: 2rem 0; border-top: 1px solid var(--line); }
+    section h2 { font-size: 1.5rem; margin-bottom: 1.1rem; }
 
 
-<title>Omar Mahadalle</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script> 
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">	
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-	<!-- code folding -->
-	
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+    /* Gallery page is a little wider than text pages */
+    .page-wide { max-width: 1100px; }
 
-	
-<script src="resources/js/ie-emulation-modes-warning.js"></script>
-<script src="resources/js/jquery.min.js"></script> 	
+    /* Featured photo */
+    .feature { position: relative; border-radius: 8px; overflow: hidden; margin-bottom: 1rem; background: var(--accent-soft); }
+    .feature .tile-btn img { width: 100%; aspect-ratio: 21 / 9; object-fit: cover; display: block; }
+    .feature .over {
+      position: absolute; inset: auto 0 0 0; padding: 3rem 1.4rem 1.2rem; pointer-events: none;
+      background: linear-gradient(to top, rgba(8,24,38,.82), rgba(8,24,38,0)); color: #fff;
+    }
+    .feature .over small { display: block; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: #c9d9e6; font-weight: 600; }
+    .feature .over h2 { font-size: 1.7rem; color: #fff; margin: .1rem 0; }
+    .feature .over span { color: #dbe6ef; }
 
-<!-- FA that can't be removed -->
-<link href="/site_libs/bootstrap-3.3.5" rel="stylesheet" />
+    /* Grid */
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
+    .grid figure { margin: 0; }
+    .grid .tile-btn img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; display: block; transition: transform .35s ease; }
+    .grid .tile-btn { border-radius: 6px; overflow: hidden; }
+    .grid .tile-btn:hover img { transform: scale(1.03); }
+    .grid figcaption { font-size: .92rem; margin-top: .4rem; }
+    .grid figcaption small { color: var(--muted); }
+    .tile-btn { display: block; width: 100%; padding: 0; border: 0; background: var(--accent-soft); cursor: zoom-in; }
+    .tile-btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+    @media (max-width: 576px) {
+      .feature .tile-btn img { aspect-ratio: 4 / 3; }
+      .feature .over { padding: 2.5rem 1rem 1rem; }
+      .feature .over h2 { font-size: 1.3rem; }
+      .grid { grid-template-columns: 1fr 1fr; gap: .6rem; }
+      .grid figcaption { font-size: .82rem; }
+    }
+    /* Lightbox */
+    .lightbox {
+      position: fixed; inset: 0; z-index: 2000; background: rgba(6,16,26,.96);
+      display: grid; grid-template-rows: auto 1fr auto; color: #fff;
+      padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    }
+    .lightbox[hidden] { display: none; }
+    .lb-top { display: flex; justify-content: space-between; align-items: center; padding: .8rem 1rem; font-size: .9rem; color: #b8c7d4; }
+    .lb-stage { position: relative; display: flex; align-items: center; justify-content: center; min-height: 0; padding: 0 3.5rem; }
+    .lb-stage img { max-width: 100%; max-height: calc(100vh - 11rem); max-height: calc(100dvh - 11rem); object-fit: contain; border-radius: 4px; user-select: none; -webkit-user-drag: none; }
+    .lb-btn {
+      background: rgba(255,255,255,.1); border: 0; color: #fff; width: 2.75rem; height: 2.75rem;
+      border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.2rem;
+    }
+    .lb-btn:hover { background: rgba(255,255,255,.2); }
+    .lb-btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+    .lb-prev, .lb-next { position: absolute; top: 50%; transform: translateY(-50%); }
+    .lb-prev { left: .6rem; } .lb-next { right: .6rem; }
+    .lb-info { padding: .9rem 1rem 1.2rem; text-align: center; }
+    .lb-info h2 { font-size: 1.15rem; color: #fff; margin: 0 0 .2rem; }
+    .lb-info p { margin: 0; color: #b8c7d4; font-size: .92rem; }
+    @media (max-width: 576px) { .lb-stage { padding: 0 .4rem; } .lb-prev, .lb-next { width: 2.4rem; height: 2.4rem; background: rgba(0,0,0,.4); } .lb-prev { left: .5rem; } .lb-next { right: .5rem; } }
+    body.lb-open { overflow: hidden; }
 
-<!-- Add the base CSS plus Solid + Brands styles-->
-<link href="/assets/fontawesome-free-6.7.2-web/css/fontawesome.css" rel="stylesheet">
-<link href="/assets/fontawesome-free-6.7.2-web/css/brands.css" rel="stylesheet">
-<link href="/assets/fontawesome-free-6.7.2-web/css/solid.css" rel="stylesheet">
+    @media (prefers-reduced-motion: reduce) { .grid .tile-btn img { transition: none; } }
 
-<!-- update existing v5 CSS to use v6 icons and assets -->
-<link href="/assets/fontawesome-free-6.4.2-web/css/v5-font-face.css" rel="stylesheet" />
+    @media (max-width: 576px) {
+      .page-head { padding-top: 2rem; }
+      .page-head h1 { font-size: 2rem; }
+    }
 
-<!-- Your icons showed up and render using FA v6 -->
-
-<script>	
-    $(function(){
-      $("#includedPresentations").load("presentations.html");
-      $("#included").load("funding.html");
-      $("#includedAwardsHonours").load("awards.html");
-      $("#includedTravel").load("travel_grants.html");
-      $("#includedConferencesAttended").load("conferences.html");
-      $("#includedReviewPublications").load("review_publications.html");
-      $("#includedFooter").load("footer.html");
-    });
-    </script>
-  
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration:  none;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: 1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
-
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
-
-<body style="background-color:#ededed;">
-	
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-p {
-  font-size: 1.300em;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
-
-<style type = "text/css">
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 5px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-
-</style>
-
-
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-bottom: 0px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0%;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #c20e0e;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #c92222;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
-
-<!-- tabsets -->
-<!--#ddd-->
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 50px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: red;
-  border: 1px solid #c92222;
-  border-radius: 20px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 20px solid #c92e2e;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 100px;
-  border-right: 1px solid #d61a1a;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 1px;
-  
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #f1f1f1;
-  padding: 0px;
-  font-family: Arial;
-}
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-</style>
-
-	
-
+    footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; padding: 1.5rem 0; margin-top: 1rem; }
+  </style>
 </head>
-<!-- code folding -->
 
-	
 <body>
 
-<!-- Navbar -->
-<div class="fluid-row" id="header">
-		 
-<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-primary">		
-<!--<nav class="navbar navbar-fixed-top navbar-expand-lg" style="background-color: #ffffff;">-->
-	<div class="container"> 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container page">
+    <a class="navbar-brand" href="index.html">Omar Mahadalle</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>  
-	 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-   	<ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="index.html" class="btn btn-primary btn-lg" type="button" aria-selected="true">
-	<span class="fa fa-home"></span>
-		  Home 
-	  </a>
-        </li>
-        <li class="nav-item">
-        <a class="btn btn-primary btn-lg" type="button" href="aboutme.html" aria-expanded="false">
-	<span class="fa fa-user"></span> 
-		About 
-	</a>
-        </li>
-        
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutme.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#research">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#publications">Publications</a></li>
         <li class="nav-item dropdown">
-         <a class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" href="#" aria-expanded="false" > 
-         <i class="fab fa-blogger-b"></i> Blog
-          </a>
-          <ul class="dropdown-menu">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+          <ul class="dropdown-menu dropdown-menu-end">
             <li><a class="dropdown-item" href="data_science.html">Data science</a></li>
-            <li><a class="dropdown-item" href="#">Somali fisheries</a></li>
+            <li><a class="dropdown-item" href="somalifisheries.html">Somali fisheries</a></li>
             <li><a class="dropdown-item" href="elasmobranchresearch.html">Elasmobranch research</a></li>
           </ul>
         </li>
-	<li class="nav-item dropdown">
-          <a class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" href="#"  aria-expanded="false">
-           <i class="fas fa-users"></i> 
-		  Sci Commun
-        </a>
-          <ul class="dropdown-menu">
-            	<li><a class="dropdown-item" href="photography.html">Photography</a></li>
-            	<li><a class="dropdown-item" href="sketchdrawing.html">Sketch drawing</a></li>
-		<li><a class="dropdown-item" href="virtualmuseum.html">Virtual museum of natural history</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Outreach</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item active" aria-current="page" href="photography.html">Photography</a></li>
+            <li><a class="dropdown-item" href="sketchdrawing.html">Sketch drawing</a></li>
+            <li><a class="dropdown-item" href="virtualmuseum.html">Virtual museum of natural history</a></li>
           </ul>
         </li>
-		<li class="nav-item">
-          <a class="btn btn-primary btn-lg" href="resources.html" aria-expanded="false">
-		<span class="fas fa-bookmark"></span>
-			Resources
-		</a>
-	</li>
-		<li class="nav-item">
-         <a class="btn btn-primary btn-lg" href="contactinfo.html" aria-expanded="false">
-		<span class="fa fa-address-book"></span>
-			 Contact
-		</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactinfo.html">Contact</a></li>
       </ul>
-	</div>
-		
-    </div><!--/.container -->
-	</nav>
-  </div><!--/.navbar -->	  
+    </div>
+  </div>
+</nav>
 
-  
-<div class="fluid-row" id="header">
-   
-	 
-<div class="container">
-	<h5><strong>Photo Gallery</strong></h5>
-<!-- MAIN (Center website) -->
+<main class="container page page-wide">
 
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column">
-    <div class="content">
-      <img src="images/IMG_Apo.jpg" alt="Mountains" style="width:100%">
-      <h6>Apo Island</h6>
-      <p>2021</p>
-    </div>
+  <div class="page-head">
+    <div class="eyebrow">Outreach · Photography</div>
+    <h1>Through the lens</h1>
+    <p class="lede">
+      Photos from my time in the Philippines and Somalia. Tap any photo to view it full size.
+    </p>
   </div>
-  <div class="column">
-    <div class="content">
-    <img src="images/GOPR0858.JPG" alt="Lights" style="width:100%">
-	<h6>Apo Island, Philippines</h6>
-      <p>2021</p>
-    </div>
+
+  <div class="feature" id="feature"></div>
+  <div class="grid" id="grid"></div>
+
+</main>
+
+<!-- Full-screen viewer -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" hidden>
+  <div class="lb-top">
+    <span id="lb-count">1 / 1</span>
+    <button class="lb-btn" type="button" id="lb-close" aria-label="Close">&#x2715;</button>
   </div>
-  <div class="column">
-    <div class="content">
-    <img src="images/Guls.jpeg" alt="Nature" style="width:100%">
-      <h5>Bandar Bayla, Somalia</h5>
-      <p>2022</p>
-    </div>
+  <div class="lb-stage" id="lb-stage">
+    <button class="lb-btn lb-prev" type="button" id="lb-prev" aria-label="Previous photo">&#x2039;</button>
+    <img id="lb-img" alt="">
+    <button class="lb-btn lb-next" type="button" id="lb-next" aria-label="Next photo">&#x203A;</button>
   </div>
-  <div class="column">
-    <div class="content">
-    <img src="images/Kiis_BG.jpg" alt="Mountains" style="width:100%">
-       <h5>Bargaal, Somalia</h5>
-      <p>2022</p>
-    </div>
+  <div class="lb-info">
+    <h2 id="lb-title"></h2>
+    <p id="lb-meta"></p>
   </div>
-<!-- END GRID -->
 </div>
 
-<div class="content">
-  <img src="images/DSCF7425.JPG" alt="Bear" style="width:100%">
-   <h5>Mogadishu, Somalia</h5>
-  <p>2023</p>
-</div>
+<footer>
+  <div class="container page page-wide d-flex flex-wrap justify-content-between gap-2">
+    <span>&copy; 2026 Omar Mahadalle. All photos by Omar Mahadalle.</span>
+    <span>Last updated October 2026</span>
+  </div>
+</footer>
 
-<!-- END MAIN -->
-</div>
-
-
- <!-- Google Analytics -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  /* ============================================================
+     YOUR PHOTOS: edit this list.
+     - src: path to the image in your images/ folder
+     - featured: true for the ONE photo shown large at the top
+     To add a photo, copy a line, change it, and keep the commas.
+     ============================================================ */
+  var PHOTOS = [
+    { src: 'images/Kiis_BG.jpg',   title: 'Bargaal',      place: 'Somalia',     year: '2022', featured: true },
+    { src: 'images/IMG_Apo.jpg',   title: 'Apo Island',   place: 'Philippines', year: '2021' },
+    { src: 'images/GOPR0858.JPG',  title: 'Apo Island',   place: 'Philippines', year: '2021' },
+    { src: 'images/Guls.jpeg',     title: 'Bandar Bayla', place: 'Somalia',     year: '2022' },
+    { src: 'images/DSCF7425.JPG',  title: 'Mogadishu',    place: 'Somalia',     year: '2023' }
+  ];
 
-ga('create', 'UA-XXXXX-Y', 'auto');
-ga('send', 'pageview');
-</script>
-<!-- End Google Analytics --> 
-  
-  
-<script>
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
+  /* ---------- Stand-in image, shown only if a photo file is missing ---------- */
+  var HUES = { 'Philippines': ['#0b3d5c', '#2a84b5'], 'Somalia': ['#3b5875', '#d8a86e'] };
+  function placeholder(p) {
+    var c = HUES[p.place] || ['#1f5f8b', '#8fb3cf'];
+    var W = 1200, H = 800;
+    var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + ' ' + H + '">' +
+      '<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="' + c[1] + '"/><stop offset="1" stop-color="' + c[0] + '"/></linearGradient></defs>' +
+      '<rect width="100%" height="100%" fill="url(#g)"/>' +
+      '<text x="50%" y="48%" text-anchor="middle" font-family="Georgia, serif" font-size="56" fill="rgba(255,255,255,.92)">' + p.title.replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</text>' +
+      '<text x="50%" y="56%" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="rgba(255,255,255,.7)">Photo file not found</text></svg>';
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  }
+  function useFallback(img, p) { img.onerror = null; p.shown = placeholder(p); img.src = p.shown; }
 
+  // Featured photo first, then the rest in list order
+  var hero = PHOTOS.filter(function (p) { return p.featured; })[0] || PHOTOS[0];
+  var ORDER = [hero].concat(PHOTOS.filter(function (p) { return p !== hero; }));
+  function visible() { return ORDER; }
 
-</script>
+  function makeButton(p, i) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'tile-btn';
+    b.setAttribute('aria-label', 'Open photo: ' + p.title + ', ' + p.year);
+    var img = document.createElement('img');
+    img.alt = 'Photo taken at ' + p.title + ', ' + p.place + ', ' + p.year;
+    if (i > 0) img.loading = 'lazy';
+    img.onerror = function () { useFallback(img, p); };
+    img.src = p.shown || p.src;
+    b.appendChild(img);
+    b.addEventListener('click', function () { openLightbox(i, b); });
+    return b;
+  }
 
-<!-- tabsets -->
+  function render() {
+    var feat = document.getElementById('feature');
+    feat.innerHTML = '';
+    feat.appendChild(makeButton(hero, 0));
+    var over = document.createElement('div'); over.className = 'over';
+    over.innerHTML = '<small>Featured</small><h2></h2><span></span>';
+    over.querySelector('h2').textContent = hero.title;
+    over.querySelector('span').textContent = hero.place + ' · ' + hero.year;
+    feat.appendChild(over);
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
+    var grid = document.getElementById('grid');
+    grid.innerHTML = '';
+    ORDER.slice(1).forEach(function (p, k) {
+      var fig = document.createElement('figure');
+      fig.appendChild(makeButton(p, k + 1));
+      var cap = document.createElement('figcaption');
+      cap.textContent = p.title + ' ';
+      var sm = document.createElement('small'); sm.textContent = '· ' + p.place + ', ' + p.year; cap.appendChild(sm);
+      fig.appendChild(cap);
+      grid.appendChild(fig);
+    });
+  }
 
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+  /* ---------- Lightbox ---------- */
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lb-img');
+  var lbTitle = document.getElementById('lb-title');
+  var lbMeta = document.getElementById('lb-meta');
+  var lbCount = document.getElementById('lb-count');
+  var current = 0, opener = null;
+
+  function show(i) {
+    var list = visible();
+    current = (i + list.length) % list.length;
+    var p = list[current];
+    lbImg.onerror = function () { useFallback(lbImg, p); };
+    lbImg.src = p.shown || p.src;
+    lbImg.alt = p.title;
+    lbTitle.textContent = p.title;
+    lbMeta.textContent = p.place + (p.year ? ' · ' + p.year : '');
+    lbCount.textContent = (current + 1) + ' / ' + list.length;
+    // preload neighbours
+    [current + 1, current - 1].forEach(function (k) {
+      var q = list[(k + list.length) % list.length];
+      if (q && !q.shown) { var pre = new Image(); pre.src = q.src; }
+    });
+  }
+  function openLightbox(i, from) {
+    opener = from; show(i);
+    lb.hidden = false; document.body.classList.add('lb-open');
+    document.getElementById('lb-close').focus();
+  }
+  function closeLightbox() {
+    lb.hidden = true; document.body.classList.remove('lb-open');
+    if (opener) opener.focus();
+  }
+
+  document.getElementById('lb-close').addEventListener('click', closeLightbox);
+  document.getElementById('lb-prev').addEventListener('click', function () { show(current - 1); });
+  document.getElementById('lb-next').addEventListener('click', function () { show(current + 1); });
+  lb.addEventListener('click', function (e) { if (e.target === lb || e.target.id === 'lb-stage') closeLightbox(); });
+  document.addEventListener('keydown', function (e) {
+    if (lb.hidden) return;
+    if (e.key === 'Escape') closeLightbox();
+    else if (e.key === 'ArrowRight') show(current + 1);
+    else if (e.key === 'ArrowLeft') show(current - 1);
+    else if (e.key === 'Tab') {
+      // keep focus inside the viewer
+      var f = lb.querySelectorAll('button'), first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
   });
-});
+
+  // Swipe on phones
+  var x0 = null;
+  lb.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener('touchend', function (e) {
+    if (x0 === null) return;
+    var dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 50) show(current + (dx < 0 ? 1 : -1));
+    x0 = null;
+  });
+
+  render();
 </script>
-
-<!-- code folding -->
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-	
-	<!-- for the slide -->
-	<script>
-      var slideIndex = 0;
-      showSlides();
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for(i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if(slideIndex > slides.length) {
-          slideIndex = 1
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-      }
-    </script>
-	
-	
-
-
 </body>
 </html>
