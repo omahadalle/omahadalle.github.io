@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resources | Omar Mahadalle</title>
+  <meta name="description" content="Population genomics tools, data science links and fisheries reading collected by marine biologist Omar Mahadalle.">
+  <meta property="og:title" content="Resources | Omar Mahadalle">
+  <meta property="og:description" content="Population genomics tools, data science links and fisheries reading.">
+  <meta property="og:image" content="images/IMG_8784_3.JPG">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #1f2933;
+      --muted: #5f6b76;
+      --line: #e4e7eb;
+      --accent: #1f5f8b;       /* deep ocean blue */
+      --accent-soft: #e8f0f6;
+      --bg: #ffffff;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Source Sans 3', Arial, sans-serif;
+      font-size: 1.08rem;
+      line-height: 1.7;
+    }
+    h1, h2, h3 { font-family: 'Source Serif 4', Georgia, serif; color: var(--ink); text-wrap: balance; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Navbar: same as the homepage */
+    .navbar { background: #fff; border-bottom: 1px solid var(--line); }
+    .navbar-brand { font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; color: var(--ink) !important; }
+    .navbar .nav-link { color: var(--muted); font-weight: 500; }
+    .navbar .nav-link:hover, .navbar .nav-link.active { color: var(--accent); }
+    .dropdown-item:active { background: var(--accent); }
+
+    .page { max-width: 860px; }
+
+    /* Icons: Font Awesome Free (CC BY 4.0), built into the page as SVG */
+    .ico { width: 1em; height: 1em; display: inline-block; vertical-align: -0.125em; }
+
+    /* Page header */
+    .page-head { padding: 3.5rem 0 2rem; }
+    .eyebrow { color: var(--accent); font-weight: 600; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .4rem; }
+    .page-head h1 { font-size: 2.4rem; font-weight: 700; margin-bottom: .75rem; }
+    .lede { font-size: 1.2rem; color: var(--muted); }
+
+    .btn-accent { background: var(--accent); color: #fff; border: none; }
+    .btn-accent:hover { background: #174a6d; color: #fff; text-decoration: none; }
+    .btn-outline-accent { border: 1px solid var(--accent); color: var(--accent); }
+    .btn-outline-accent:hover { background: var(--accent-soft); text-decoration: none; }
+
+    /* Sections */
+    section { padding: 2rem 0; border-top: 1px solid var(--line); }
+    section h2 { font-size: 1.5rem; margin-bottom: 1.1rem; }
+
+
+    /* Link lists */
+    .links { list-style: none; padding: 0; margin: 0; display: grid; gap: .9rem; }
+    .links a { font-weight: 600; }
+    .links .src { display: block; color: var(--muted); font-size: .9rem; line-height: 1.4; }
+    .group-note { color: var(--muted); margin-bottom: 1rem; }
+
+    @media (max-width: 576px) {
+      .page-head { padding-top: 2rem; }
+      .page-head h1 { font-size: 2rem; }
+    }
+
+    footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; padding: 1.5rem 0; margin-top: 1rem; }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container page">
+    <a class="navbar-brand" href="index.html">Omar Mahadalle</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutme.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#research">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#publications">Publications</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="data_science.html">Data science</a></li>
+            <li><a class="dropdown-item" href="somalifisheries.html">Somali fisheries</a></li>
+            <li><a class="dropdown-item" href="elasmobranchresearch.html">Elasmobranch research</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Outreach</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="photography.html">Photography</a></li>
+            <li><a class="dropdown-item" href="sketchdrawing.html">Sketch drawing</a></li>
+            <li><a class="dropdown-item" href="virtualmuseum.html">Virtual museum of natural history</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="resources.html">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container page">
+
+  <div class="page-head">
+    <div class="eyebrow">Resources</div>
+    <h1>Tools and reading I use</h1>
+    <p class="lede">
+      Software, tutorials and articles I've found useful for population genomics, data analysis and
+      fisheries research. All links open in a new tab.
+    </p>
+  </div>
+
+  <section id="genomics">
+    <h2>Population genomics &amp; demographic inference</h2>
+    <p class="group-note">Software and tutorials I use for inferring population history from genetic data.</p>
+    <ul class="links">
+      <li><a href="https://people.eecs.berkeley.edu/~yss/software.html" target="_blank" rel="noopener">Demographic inference software (Yun S. Song lab)</a><span class="src">people.eecs.berkeley.edu</span></li>
+      <li><a href="https://gadma.readthedocs.io/en/latest/user_manual/installation.html" target="_blank" rel="noopener">GADMA2: demographic inference from genetic data, installation guide</a><span class="src">gadma.readthedocs.io</span></li>
+      <li><a href="https://gadma.readthedocs.io/en/latest/user_manual/plotting.html#choose-engine-for-plotting" target="_blank" rel="noopener">GADMA2: choosing an engine for plotting models</a><span class="src">gadma.readthedocs.io</span></li>
+      <li><a href="https://momi2.readthedocs.io/en/latest/introduction.html" target="_blank" rel="noopener">momi2 (MOran Models for Inference): introduction</a><span class="src">momi2.readthedocs.io</span></li>
+      <li><a href="https://radcamp.github.io/Yale2019/07_momi2_API.html#bed-file" target="_blank" rel="noopener">Demographic inference using the site frequency spectrum with momi2 (RADCamp tutorial)</a><span class="src">radcamp.github.io</span></li>
+      <li><a href="https://github.com/popgenmethods/momi2/issues/29" target="_blank" rel="noopener">momi2 issue #29: exception with growth parameters</a><span class="src">github.com</span></li>
+    </ul>
+  </section>
+
+  <section id="genomic-data">
+    <h2>Genomic data &amp; sequencing</h2>
+    <ul class="links">
+      <li><a href="http://genomesize.com/" target="_blank" rel="noopener">Animal Genome Size Database</a><span class="src">genomesize.com</span></li>
+      <li><a href="https://sequencing.roche.com/en/blog/what-is-NGS-Target-Enrichment-and-why-is-it-important.html" target="_blank" rel="noopener">What is NGS target enrichment and why is it important?</a><span class="src">sequencing.roche.com</span></li>
+    </ul>
+  </section>
+
+  <section id="writing">
+    <h2>Research &amp; writing</h2>
+    <ul class="links">
+      <li><a href="https://www.butte.edu/departments/cas/tipsheets/research/research_paper.html" target="_blank" rel="noopener">How to start (and complete) a research paper</a><span class="src">butte.edu</span></li>
+    </ul>
+  </section>
+
+  <section id="data-science">
+    <h2>Data science quick links</h2>
+    <ul class="links">
+      <li><a href="https://epsg.io/map#srs=4326&amp;x=50.625000&amp;y=10.349518&amp;z=1&amp;layer=streets" target="_blank" rel="noopener">Geodetic CRS: WGS 84 (EPSG:4326)</a><span class="src">epsg.io</span></li>
+      <li><a href="https://globalfishingwatch.org/data/new-fishing-data-paves-the-way-for-improved-analysis/" target="_blank" rel="noopener">Global Fishing Watch: updated fishing effort dataset</a><span class="src">globalfishingwatch.org</span></li>
+    </ul>
+  </section>
+
+  <section id="fisheries">
+    <h2>Fisheries &amp; ocean governance</h2>
+    <p class="group-note">Articles on fisheries in the Western Indian Ocean, the Red Sea and beyond.</p>
+    <ul class="links">
+      <li><a href="https://www.hakaimagazine.com/news/foreign-fleets-plundered-somalias-fish/" target="_blank" rel="noopener">Foreign fleets plundered Somalia’s fish</a><span class="src">hakaimagazine.com</span></li>
+      <li><a href="https://www.theguardian.com/environment/2021/mar/05/eu-accused-of-neocolonial-plundering-of-tuna-in-indian-ocean" target="_blank" rel="noopener">EU accused of ‘neocolonial’ plundering of tuna in Indian Ocean</a><span class="src">theguardian.com</span></li>
+      <li><a href="https://resweb2.jhk.adm.fukuoka-u.ac.jp/FukuokaUnivHtml/info/7344/R114E_185869.html" target="_blank" rel="noopener">Some aspects of socio-economic characteristics of the fisheries in the northern Sudanese Red Sea coast</a><span class="src">resweb2.jhk.adm.fukuoka-u.ac.jp</span></li>
+      <li><a href="https://www.agriculture.gov.au/abares/products/insights/snapshot-of-australias-commercial-fisheries-and-aquaculture" target="_blank" rel="noopener">Snapshot of Australia’s commercial fisheries and aquaculture</a><span class="src">agriculture.gov.au</span></li>
+    </ul>
+  </section>
+
+  <section id="elsewhere">
+    <h2>Me elsewhere</h2>
+    <ul class="links">
+      <li><a href="https://www.somalispot.com/threads/omar-mahadalle-ama.105218/" target="_blank" rel="noopener">Omar Mahadalle: Ask Me Anything</a><span class="src">somalispot.com</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container page d-flex flex-wrap justify-content-between gap-2">
+    <span>&copy; 2026 Omar Mahadalle</span>
+    <span>Last updated October 2026</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
