@@ -1,478 +1,270 @@
 <!DOCTYPE html>
-<html class="chapters">
-
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="generator" content="website"/>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sketch Drawing | Omar Mahadalle</title>
+  <meta name="description" content="Scientific sketches of marine fishes by marine biologist Omar Mahadalle.">
+  <meta property="og:title" content="Sketch Drawing | Omar Mahadalle">
+  <meta property="og:description" content="Scientific sketches of marine fishes.">
+  <meta property="og:image" content="images/L.%20fulvus.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #1f2933;
+      --muted: #5f6b76;
+      --line: #e4e7eb;
+      --accent: #1f5f8b;       /* deep ocean blue */
+      --accent-soft: #e8f0f6;
+      --bg: #ffffff;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Source Sans 3', Arial, sans-serif;
+      font-size: 1.08rem;
+      line-height: 1.7;
+    }
+    h1, h2, h3 { font-family: 'Source Serif 4', Georgia, serif; color: var(--ink); text-wrap: balance; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Navbar: same as the homepage */
+    .navbar { background: #fff; border-bottom: 1px solid var(--line); }
+    .navbar-brand { font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; color: var(--ink) !important; }
+    .navbar .nav-link { color: var(--muted); font-weight: 500; }
+    .navbar .nav-link:hover, .navbar .nav-link.active { color: var(--accent); }
+    .dropdown-item:active { background: var(--accent); }
+
+    .page { max-width: 860px; }
+
+    /* Icons: Font Awesome Free (CC BY 4.0), built into the page as SVG */
+    .ico { width: 1em; height: 1em; display: inline-block; vertical-align: -0.125em; }
+
+    /* Page header */
+    .page-head { padding: 3.5rem 0 2rem; }
+    .eyebrow { color: var(--accent); font-weight: 600; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .4rem; }
+    .page-head h1 { font-size: 2.4rem; font-weight: 700; margin-bottom: .75rem; }
+    .lede { font-size: 1.2rem; color: var(--muted); }
+
+    .btn-accent { background: var(--accent); color: #fff; border: none; }
+    .btn-accent:hover { background: #174a6d; color: #fff; text-decoration: none; }
+    .btn-outline-accent { border: 1px solid var(--accent); color: var(--accent); }
+    .btn-outline-accent:hover { background: var(--accent-soft); text-decoration: none; }
+
+    /* Sections */
+    section { padding: 2rem 0; border-top: 1px solid var(--line); }
+    section h2 { font-size: 1.5rem; margin-bottom: 1.1rem; }
 
 
-<title>Omar Mahadalle</title>
+    section p { margin-bottom: .9rem; }
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script> 
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">	
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-	<!-- code folding -->
-	
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+    /* Sketchbook grid: drawings are never cropped */
+    .sketches { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
+    .sketches.single { grid-template-columns: minmax(0, 640px); }
+    .sketch { margin: 0; min-width: 0; }
+    .sketch-btn {
+      display: flex; align-items: center; justify-content: center; width: 100%; aspect-ratio: 4 / 3;
+      padding: 1rem; border: 1px solid var(--line); border-radius: 6px; background: #fbfaf7; cursor: zoom-in;
+    }
+    .sketch-btn img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; transition: transform .3s ease; }
+    .sketch-btn:hover img { transform: scale(1.03); }
+    .sketch-btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+    .sketch figcaption { margin-top: .5rem; }
+    .sketch .sci { font-family: 'Source Serif 4', Georgia, serif; font-style: italic; font-size: 1.05rem; }
+    .sketch .common { color: var(--muted); font-size: .92rem; }
+    .missing { color: var(--muted); font-size: .9rem; text-align: center; }
 
-	
-<script src="resources/js/ie-emulation-modes-warning.js"></script>
-<script src="resources/js/jquery.min.js"></script> 	
+    /* Lightbox */
+    .lightbox {
+      position: fixed; inset: 0; z-index: 2000; background: rgba(6,16,26,.96);
+      display: grid; grid-template-rows: auto minmax(0, 1fr) auto; color: #fff;
+      padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    }
+    .lightbox[hidden] { display: none; }
+    .lb-top { display: flex; justify-content: space-between; align-items: center; padding: .8rem 1rem; font-size: .9rem; color: #b8c7d4; }
+    .lb-stage { position: relative; display: flex; align-items: center; justify-content: center; min-height: 0; padding: 0 3.5rem; }
+    .lb-stage img { max-width: 100%; max-height: calc(100vh - 11rem); max-height: calc(100dvh - 11rem); object-fit: contain; background: #fbfaf7; border-radius: 4px; padding: .5rem; }
+    .lb-btn { background: rgba(255,255,255,.12); border: 0; color: #fff; width: 2.75rem; height: 2.75rem; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; }
+    .lb-btn:hover { background: rgba(255,255,255,.22); }
+    .lb-btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+    .lb-prev, .lb-next { position: absolute; top: 50%; transform: translateY(-50%); }
+    .lb-prev { left: .6rem; } .lb-next { right: .6rem; }
+    .lb-info { padding: .9rem 1rem 1.2rem; text-align: center; }
+    .lb-info h2 { font-size: 1.15rem; color: #fff; margin: 0 0 .2rem; font-style: italic; }
+    .lb-info p { margin: 0; color: #b8c7d4; font-size: .92rem; }
+    body.lb-open { overflow: hidden; }
+    @media (max-width: 576px) { .lb-stage { padding: 0 .4rem; } .lb-prev, .lb-next { width: 2.4rem; height: 2.4rem; background: rgba(0,0,0,.45); } }
+    @media (prefers-reduced-motion: reduce) { .sketch-btn img { transition: none; } }
 
-<!-- FA that can't be removed -->
-<link href="/site_libs/bootstrap-3.3.5" rel="stylesheet" />
+    @media (max-width: 576px) {
+      .page-head { padding-top: 2rem; }
+      .page-head h1 { font-size: 2rem; }
+    }
 
-<!-- Add the base CSS plus Solid + Brands styles-->
-<link href="/assets/fontawesome-free-6.7.2-web/css/fontawesome.css" rel="stylesheet">
-<link href="/assets/fontawesome-free-6.7.2-web/css/brands.css" rel="stylesheet">
-<link href="/assets/fontawesome-free-6.7.2-web/css/solid.css" rel="stylesheet">
-
-<!-- update existing v5 CSS to use v6 icons and assets -->
-<link href="/assets/fontawesome-free-6.4.2-web/css/v5-font-face.css" rel="stylesheet" />
-
-<!-- Your icons showed up and render using FA v6 -->
-
-<script>	
-    $(function(){
-      $("#includedPresentations").load("presentations.html");
-      $("#included").load("funding.html");
-      $("#includedAwardsHonours").load("awards.html");
-      $("#includedTravel").load("travel_grants.html");
-      $("#includedConferencesAttended").load("conferences.html");
-      $("#includedReviewPublications").load("review_publications.html");
-      $("#includedFooter").load("footer.html");
-    });
-    </script>
-  
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration:  none;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: 1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
-
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
-
-<body style="background-color:#ededed;">
-	
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-p {
-  font-size: 1.300em;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
-
-<style type = "text/css">
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 5px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-
-</style>
-
-
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-bottom: 0px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0%;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #c20e0e;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #c92222;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
-
-<!-- tabsets -->
-<!--#ddd-->
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 50px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: red;
-  border: 1px solid #c92222;
-  border-radius: 20px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 20px solid #c92e2e;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 100px;
-  border-right: 1px solid #d61a1a;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 1px;
-  
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
-
+    footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; padding: 1.5rem 0; margin-top: 1rem; }
+  </style>
 </head>
-<!-- code folding -->
 
-	
 <body>
 
-<!-- Navbar -->
-<div class="fluid-row" id="header">
-		 
-<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-primary">		
-<!--<nav class="navbar navbar-fixed-top navbar-expand-lg" style="background-color: #ffffff;">-->
-	<div class="container"> 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container page">
+    <a class="navbar-brand" href="index.html">Omar Mahadalle</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>  
-	 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-   	<ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="index.html" class="btn btn-primary btn-lg" type="button" aria-selected="true">
-	<span class="fa fa-home"></span>
-		  Home 
-	  </a>
-        </li>
-        <li class="nav-item">
-        <a class="btn btn-primary btn-lg" type="button" href="aboutme.html" aria-expanded="false">
-	<span class="fa fa-user"></span> 
-		About 
-	</a>
-        </li>
-        
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutme.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#research">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#publications">Publications</a></li>
         <li class="nav-item dropdown">
-         <a class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" href="#" aria-expanded="false" > 
-         <i class="fab fa-blogger-b"></i> Blog
-          </a>
-          <ul class="dropdown-menu">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+          <ul class="dropdown-menu dropdown-menu-end">
             <li><a class="dropdown-item" href="data_science.html">Data science</a></li>
-            <li><a class="dropdown-item" href="#">Somali fisheries</a></li>
-            <li><a class="dropdown-item" href="elasmobranchresearch.html">Elasmobranch research</a></li>
+            <li><a class="dropdown-item" href="somalifisheries.html">Somali fisheries</a></li>
+            <li><a class="dropdown-item" href="elasmobranchresearch.html">Sharks and rays of Somalia</a></li>
           </ul>
         </li>
-	<li class="nav-item dropdown">
-          <a class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" href="#"  aria-expanded="false">
-           <i class="fas fa-users"></i> 
-		  Sci Commun
-        </a>
-          <ul class="dropdown-menu">
-            	<li><a class="dropdown-item" href="photography.html">Photography</a></li>
-            	<li><a class="dropdown-item" href="sketchdrawing.html">Sketch drawing</a></li>
-		<li><a class="dropdown-item" href="virtualmuseum.html">Virtual museum of natural history</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Outreach</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="photography.html">Photography</a></li>
+            <li><a class="dropdown-item active" aria-current="page" href="sketchdrawing.html">Sketch drawing</a></li>
+            <li><a class="dropdown-item" href="virtualmuseum.html">Virtual museum of natural history</a></li>
           </ul>
         </li>
-		<li class="nav-item">
-          <a class="btn btn-primary btn-lg" href="resources.html" aria-expanded="false">
-		<span class="fas fa-bookmark"></span>
-			Resources
-		</a>
-	</li>
-		<li class="nav-item">
-         <a class="btn btn-primary btn-lg" href="contactinfo.html" aria-expanded="false">
-		<span class="fa fa-address-book"></span>
-			 Contact
-		</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactinfo.html">Contact</a></li>
       </ul>
-	</div>
-		
-    </div><!--/.container -->
-	</nav>
-  </div><!--/.navbar -->	  
-
-  
-<div class="fluid-row" id="header">
-
-	<div class="container about">
-   <div class="slideshow-container">
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="images/L. fulvus.png" class="img-thumbnail" style="width:100%">
-        <div class="text">L. fulvus</div>
-      </div>
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="images/L. fulvus.png" class="img-thumbnail" style="width:100%">
-        <div class="text">L. fulvus</div>
-      </div>
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="images/L. fulvus.png" class="img-thumbnail" style="width:100%">
-        <div class="text">L. fulvus</div>
-      </div>
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <br>
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-	 </div>
-	
-	
-    
-	   
-	 
-<hr class="featurette-divider">	      
-      
+  </div>
+</nav>
+<main class="container page">
 
-      <!-- FOOTER -->
-   <footer class="footer">
-    <p class="footer__title"></p>
-    <p class="footer__subtitle"></p>
+  <div class="page-head">
+    <div class="eyebrow">Outreach · Sketch drawing</div>
+    <h1>Sketchbook</h1>
+    <p class="lede">
+      Drawings of the marine fishes I study and encounter in the field. Tap a sketch to view it full size.
+    </p>
+  </div>
+
+  <section id="sketches">
+    <div class="sketches" id="sketches"></div>
+  </section>
+
+</main>
+
+<!-- Full-screen viewer -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" hidden>
+  <div class="lb-top">
+    <span id="lb-count">1 / 1</span>
+    <button class="lb-btn" type="button" id="lb-close" aria-label="Close">&#x2715;</button>
+  </div>
+  <div class="lb-stage" id="lb-stage">
+    <button class="lb-btn lb-prev" type="button" id="lb-prev" aria-label="Previous sketch">&#x2039;</button>
+    <img id="lb-img" alt="">
+    <button class="lb-btn lb-next" type="button" id="lb-next" aria-label="Next sketch">&#x203A;</button>
+  </div>
+  <div class="lb-info">
+    <h2 id="lb-title"></h2>
+    <p id="lb-meta"></p>
+  </div>
+</div>
+
+<footer>
+  <div class="container page d-flex flex-wrap justify-content-between gap-2">
+    <span>&copy; 2026 Omar Mahadalle. All drawings by Omar Mahadalle.</span>
+    <span>Last updated October 2026</span>
+  </div>
 </footer>
- 
- <!-- Google Analytics -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  /* ============================================================
+     YOUR SKETCHES: edit this list.
+     - src: path to the drawing in your images/ folder
+     - species: scientific name (shown in italics)
+     - common: common name (optional)
+     - note: medium or short note (optional), e.g. 'Pencil on paper, 2024'
+     To add a sketch, copy a line, change it, and keep the commas.
+     ============================================================ */
+  var SKETCHES = [
+    { src: 'images/L.%20fulvus.png', species: 'L. fulvus', common: '', note: '' }
+  ];
 
-ga('create', 'UA-XXXXX-Y', 'auto');
-ga('send', 'pageview');
-</script>
-<!-- End Google Analytics --> 
-  
-  
-<script>
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
+  var wrap = document.getElementById('sketches');
+  if (SKETCHES.length === 1) wrap.classList.add('single');
 
-
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+  SKETCHES.forEach(function (s, i) {
+    var fig = document.createElement('figure'); fig.className = 'sketch';
+    var b = document.createElement('button'); b.type = 'button'; b.className = 'sketch-btn';
+    b.setAttribute('aria-label', 'Open sketch: ' + s.species);
+    var img = document.createElement('img');
+    img.alt = 'Sketch of ' + s.species + (s.common ? ' (' + s.common + ')' : '');
+    img.loading = i > 1 ? 'lazy' : 'eager';
+    img.onerror = function () { b.innerHTML = '<span class="missing">Drawing file not found:<br>' + s.src.replace(/%20/g, ' ') + '</span>'; };
+    img.src = s.src;
+    b.appendChild(img);
+    b.addEventListener('click', function () { openLightbox(i, b); });
+    var cap = document.createElement('figcaption');
+    var sci = document.createElement('div'); sci.className = 'sci'; sci.textContent = s.species; cap.appendChild(sci);
+    var extra = [s.common, s.note].filter(Boolean).join(' · ');
+    if (extra) { var cm = document.createElement('div'); cm.className = 'common'; cm.textContent = extra; cap.appendChild(cm); }
+    fig.appendChild(b); fig.appendChild(cap); wrap.appendChild(fig);
   });
-});
+
+  /* ---------- Lightbox ---------- */
+  var lb = document.getElementById('lightbox'), lbImg = document.getElementById('lb-img');
+  var current = 0, opener = null;
+  function show(i) {
+    current = (i + SKETCHES.length) % SKETCHES.length;
+    var s = SKETCHES[current];
+    lbImg.src = s.src; lbImg.alt = 'Sketch of ' + s.species;
+    document.getElementById('lb-title').textContent = s.species;
+    document.getElementById('lb-meta').textContent = [s.common, s.note].filter(Boolean).join(' · ');
+    document.getElementById('lb-count').textContent = (current + 1) + ' / ' + SKETCHES.length;
+    var single = SKETCHES.length < 2;
+    document.getElementById('lb-prev').hidden = single;
+    document.getElementById('lb-next').hidden = single;
+  }
+  function openLightbox(i, from) {
+    opener = from; show(i); lb.hidden = false; document.body.classList.add('lb-open');
+    document.getElementById('lb-close').focus();
+  }
+  function closeLightbox() { lb.hidden = true; document.body.classList.remove('lb-open'); if (opener) opener.focus(); }
+  document.getElementById('lb-close').addEventListener('click', closeLightbox);
+  document.getElementById('lb-prev').addEventListener('click', function () { show(current - 1); });
+  document.getElementById('lb-next').addEventListener('click', function () { show(current + 1); });
+  lb.addEventListener('click', function (e) { if (e.target === lb || e.target.id === 'lb-stage') closeLightbox(); });
+  document.addEventListener('keydown', function (e) {
+    if (lb.hidden) return;
+    if (e.key === 'Escape') closeLightbox();
+    else if (e.key === 'ArrowRight') show(current + 1);
+    else if (e.key === 'ArrowLeft') show(current - 1);
+    else if (e.key === 'Tab') {
+      var f = [].slice.call(lb.querySelectorAll('button')).filter(function (x) { return !x.hidden; });
+      if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+      else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+    }
+  });
+  var x0 = null;
+  lb.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener('touchend', function (e) {
+    if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 50 && SKETCHES.length > 1) show(current + (dx < 0 ? 1 : -1)); x0 = null;
+  });
 </script>
-
-<!-- code folding -->
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-<!-- for the slide -->
-	<!-- <script src="https://www.w3docs.com/tools/code-editor/3720" -->
-	<script>
-      var slideIndex = 0;
-      showSlides();
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for(i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if(slideIndex > slides.length) {
-          slideIndex = 1
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-      }
-    </script>
 </body>
 </html>
