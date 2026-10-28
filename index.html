@@ -45,7 +45,7 @@
     .page { max-width: 860px; }
 
     /* Hero */
-    .hero { padding: 3.5rem 0 2.5rem; }
+    .hero { border: 1px solid var(--accent); border-radius: 10px; padding: 2rem; margin: 2.5rem 0 2rem; background: #fff; }
     .photo {
       width: 170px; height: 170px; object-fit: cover; border-radius: 50%;
       background: var(--accent-soft);
@@ -93,7 +93,7 @@
     .timeline-item .when { color: var(--muted); font-size: .93rem; padding-top: .1rem; }
     @media (max-width: 576px) {
       .timeline-item { grid-template-columns: 1fr; gap: 0; }
-      .hero { padding-top: 2rem; text-align: center; }
+      .hero { padding: 1.5rem 1.1rem; margin-top: 1.25rem; text-align: center; }
       .social a { margin: 0 .45rem; }
       .hero-buttons { justify-content: center; }
     }
@@ -122,7 +122,7 @@
           <ul class="dropdown-menu dropdown-menu-end">
             <li><a class="dropdown-item" href="data_science.html">Data science</a></li>
             <li><a class="dropdown-item" href="somalifisheries.html">Somali fisheries</a></li>
-            <li><a class="dropdown-item" href="elasmobranchresearch.html">Elasmobranch research</a></li>
+            <li><a class="dropdown-item" href="elasmobranchresearch.html">Sharks and rays of Somalia</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -134,7 +134,7 @@
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactinfo.html">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -151,7 +151,7 @@
         <div class="photo-fallback mx-auto" aria-hidden="true">OM</div>
       </div>
       <div class="col-sm">
-        <h2>Omar Mahadalle</h2>
+        <h1>Omar Mahadalle</h1>
         <div class="role">
           MS Marine Biology student · Institute of Environmental and Marine Sciences, Silliman University, Philippines
         </div>
@@ -167,7 +167,7 @@
           <a href="https://www.researchgate.net/profile/Omar-Mahadalle" aria-label="ResearchGate"><svg class="ico" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 32v448h448V32H0zm262.2 334.4c-6.6 3-33.2 6-50-14.2-9.2-10.6-25.3-33.3-42.2-63.6-8.9 0-14.7 0-21.4-.6v46.4c0 23.5 6 21.2 25.8 23.9v8.1c-6.9-.3-23.1-.8-35.6-.8-13.1 0-26.1.6-33.6.8v-8.1c15.5-2.9 22-1.3 22-23.9V225c0-22.6-6.4-21-22-23.9V193c25.8 1 53.1-.6 70.9-.6 31.7 0 55.9 14.4 55.9 45.6 0 21.1-16.7 42.2-39.2 47.5 13.6 24.2 30 45.6 42.2 58.9 7.2 7.8 17.2 14.7 27.2 14.7v7.3zm22.9-135c-23.3 0-32.2-15.7-32.2-32.2V167c0-12.2 8.8-30.4 34-30.4s30.4 17.9 30.4 17.9l-10.7 7.2s-5.5-12.5-19.7-12.5c-7.9 0-19.7 7.3-19.7 19.7v26.8c0 13.4 6.6 23.3 17.9 23.3 14.1 0 21.5-10.9 21.5-26.8h-17.9v-10.7h30.4c0 20.5 4.7 49.9-34 49.9zm-116.5 44.7c-9.4 0-13.6-.3-20-.8v-69.7c6.4-.6 15-.6 22.5-.6 23.3 0 37.2 12.2 37.2 34.5 0 21.9-15 36.6-39.7 36.6z"/></svg></a>
           <a href="https://github.com/omahadalle" aria-label="GitHub"><svg class="ico" viewBox="0 0 496 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
           <a href="https://www.linkedin.com/in/omahadalle" aria-label="LinkedIn"><svg class="ico" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
-          <a href="https://twitter.com/omar_marinebio" aria-label="X (Twitter)"><svg class="ico" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
+          <a href="https://bsky.app/profile/omahadalle.bsky.social" aria-label="Bluesky"><svg class="ico" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2c42.1-31.6 110.3-56 110.3 21.8c0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5c-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9c-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1C10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z"/></svg></a>
         </div>
       </div>
     </div>
@@ -215,14 +215,15 @@
   <section id="publications">
     <h2>Publications &amp; presentations</h2>
 
-    <!-- TODO: replace these examples with your real outputs. Your name is wrapped in class="me". -->
     <div class="pub">
-      <div class="title">Title of your paper or manuscript goes here</div>
-      <div class="meta"><span class="me">Mahadalle O</span>, Coauthor A, Coauthor B. <em>Journal name</em> (Year). In prep / Under review.</div>
+      <div class="title">Somalia. In: The global status of sharks, rays, and chimaeras</div>
+      <div class="meta">Van Beuningen D, Bennett RH, Ali MH, <span class="me">Mahadalle O</span>. Jabado RW et al. (eds.). Gland, Switzerland: IUCN (2024). Book chapter.
+        <a href="files/The%20global%20status%20of%20sharks%2C%20rays%2C%20and%20chimaeras%2C%20Somalia.pdf">PDF</a></div>
     </div>
+    <!-- TODO: add the full author list, year and DOI link -->
     <div class="pub">
-      <div class="title">Title of a conference talk or poster</div>
-      <div class="meta"><span class="me">Mahadalle O</span>, et al. Conference name, City (Year). Oral presentation.</div>
+      <div class="title">Only one percent of Important Shark and Ray Areas in the Western Indian Ocean are fully protected from fishing pressure</div>
+      <div class="meta"><em>Ecology and Evolution</em>. Contributed data curation, investigation and writing.</div>
     </div>
 
     <div data-include="review_publications.html"></div>
@@ -233,7 +234,7 @@
   <section id="education">
     <h2>Education</h2>
     <div class="timeline-item">
-      <div class="when">2017 – </div>
+      <div class="when">2018 – present</div>
       <div><strong>MS Marine Biology</strong><br>Silliman University, Philippines</div>
     </div>
     <div class="timeline-item">
@@ -245,6 +246,15 @@
   <!-- Awards etc. -->
   <section id="awards">
     <h2>Awards, grants &amp; conferences</h2>
+    <div class="timeline-item">
+      <div class="when">Grant</div>
+      <div><strong>Shark Conservation Fund small grant</strong>, US$25,000 (Principal Investigator)<br>
+        Strengthening protections for the dwarf gulper shark in Somalia</div>
+    </div>
+    <div class="timeline-item">
+      <div class="when">Scholarship</div>
+      <div><strong>Somali Government scholarship</strong><br>BSc (Hons) Marine Science, Red Sea University, Sudan</div>
+    </div>
     <div data-include="awards.html"></div>
     <div data-include="funding.html"></div>
     <div data-include="travel_grants.html"></div>
@@ -262,8 +272,8 @@
 
 <footer>
   <div class="container page d-flex flex-wrap justify-content-between gap-2">
-    <span>&copy; 2021 Omar Mahadalle</span>
-    <span>Last updated October 2025</span>
+    <span>&copy; 2026 Omar Mahadalle</span>
+    <span>Last updated October 2026</span>
   </div>
 </footer>
 
