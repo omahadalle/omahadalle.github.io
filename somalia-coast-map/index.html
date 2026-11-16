@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Somalia coastal locations · Gazetteer of Somalia (1987)</title>
+  <meta name="description" content="Interactive map of 1,467 places along Somalia's coast (towns, wells, capes, bays, islands and reefs) from the 1987 Gazetteer of Somalia.">
+  <meta property="og:title" content="Somalia coastal locations">
+  <meta property="og:description" content="1,467 places along Somalia's coast, mapped from the 1987 Gazetteer of Somalia.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='12' fill='%23ff3b30' stroke='%23111' stroke-width='3'/></svg>">
+  <link rel="stylesheet" href="lib/leaflet/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="map-hidden">
+  <header class="topbar">
+    <div class="title">
+      <h1>Somalia coastal locations
+        <button id="eyeBtn" class="eye" type="button" aria-controls="map" aria-expanded="false" title="Show map">
+          <svg class="eye-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 12S5.5 4.5 12 4.5 22.5 12 22.5 12 18.5 19.5 12 19.5 1.5 12 1.5 12Z"/><circle cx="12" cy="12" r="3.2"/></svg><svg class="eye-closed" viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 12S5.5 4.5 12 4.5 22.5 12 22.5 12 18.5 19.5 12 19.5 1.5 12 1.5 12Z"/><circle cx="12" cy="12" r="3.2"/><path d="M3 3l18 18"/></svg><span class="sr">Show or hide the map</span>
+        </button>
+      </h1>
+      <p>1,467 places along the Gulf of Aden and Indian Ocean coasts</p>
+    </div>
+    <button id="aboutBtn" class="btn" aria-haspopup="dialog">About</button>
+    <div class="search" role="search">
+      <input id="q" type="search" placeholder="Search a place…" aria-label="Search a place" autocomplete="off">
+      <div id="res" role="listbox" hidden></div>
+    </div>
+  </header>
+
+  <main id="map" aria-label="Map of Somalia's coastal locations"></main>
+
+  <dialog id="about">
+    <h2>About this map</h2>
+    <p class="muted">Somalia region boundaries: <a href="https://www.amcharts.com/" target="_blank" rel="noopener">amCharts</a> (present-day regions, including Awdal and Sool, which were formed after 1987). Neighbouring countries: Natural Earth. Map library: Leaflet. Satellite imagery: Esri.</p>
+    <form method="dialog"><button class="btn">Close</button></form>
+  </dialog>
+
+  <noscript><p class="noscript">This map needs JavaScript turned on.</p></noscript>
+
+  <script src="lib/leaflet/leaflet.js"></script>
+  <script src="data/world.js"></script>
+  <script src="data/land.js"></script>
+  <script src="data/locations.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>
