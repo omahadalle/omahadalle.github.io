@@ -163,6 +163,34 @@
     </p>
   </section>
  
+  <!-- Somalia coastal locations map -->
+  <section id="coastal-map">
+    <h2>Coastal locations</h2>
+    <p>
+      An interactive map of 1,467 places along Somalia's Gulf of Aden and Indian Ocean coasts.
+      Click the eye to open the map, then search for a place or click a point for details.
+    </p>
+    <iframe
+      src="somalia-coast-map/"
+      data-open-height="650"
+      title="Somalia coastal locations"
+      loading="lazy"
+      style="width:100%; height:72px; border:1px solid var(--line); border-radius:6px; display:block; transition:height .3s ease"></iframe>
+    <script>
+      // Resizes the map frame when the eye is clicked (or search results / About box open).
+      window.addEventListener("message", function (e) {
+        var d = e.data;
+        if (!d || d.type !== "somalia-coast-map") return;
+        var frames = document.querySelectorAll("iframe[data-open-height]");
+        for (var i = 0; i < frames.length; i++) {
+          if (frames[i].contentWindow !== e.source) continue;
+          var open = parseInt(frames[i].getAttribute("data-open-height"), 10) || 650;
+          frames[i].style.height = (d.shown ? Math.max(open, d.height) : d.height) + "px";
+        }
+      });
+    </script>
+  </section>
+ 
   <!-- Fishing effort -->
   <section id="fishing-effort">
     <h2>Fishing effort</h2>
@@ -187,4 +215,3 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
- 
